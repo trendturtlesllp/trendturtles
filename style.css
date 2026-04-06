@@ -44,7 +44,7 @@ nav a:hover {
     width: 100%;
     height: auto;
     max-height: 350px;
-    object-fit: center; /*contain */
+    object-fit: contain;
     border-radius: 6px;
     margin-bottom: 25px;
 }

@@ -1,45 +1,71 @@
 body {
     margin: 0;
     font-family: "Times New Roman", serif;
-    background: #ffffff;
+    background: #f8fafc;
     color: #111;
 }
 
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 60px;
+    background: #ffffff;
     border-bottom: 1px solid #ddd;
 }
 
 .logo img {
-    height: 40px;
+    height: 50px;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: #111;
+    font-size: 16px;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
+    background: #ffffff;
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-.section {
-    max-width: 800px;
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
     margin: auto;
-    padding: 40px 20px;
 }
 
+/* Sections */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    background: #ffffff;
     border-top: 1px solid #ddd;
+    margin-top: 40px;
 }

@@ -1,8 +1,9 @@
 body {
     margin: 0;
     font-family: "Times New Roman", serif;
-    background: #f8fafc;
+    background: #f3f5f7;
     color: #111;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -10,62 +11,72 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 18px 50px;
     background: #ffffff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .logo img {
-    height: 50px;
+    height: 45px;
 }
 
 nav a {
-    margin-left: 25px;
+    margin-left: 20px;
     text-decoration: none;
     color: #111;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 90px 20px;
     background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 12px;
 }
 
 .hero p {
     font-size: 18px;
+    color: #444;
     max-width: 700px;
     margin: auto;
 }
 
 /* Sections */
 .section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
 }
 
 .section h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-size: 24px;
 }
 
-.section p {
-    font-size: 17px;
-    line-height: 1.7;
+.section ul {
+    padding-left: 18px;
+}
+
+.section li {
+    margin-bottom: 8px;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     background: #ffffff;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #e6e6e6;
     margin-top: 40px;
+    font-size: 14px;
+    color: #555;
 }

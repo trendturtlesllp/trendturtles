@@ -1,5 +1,67 @@
-<h1>Blog</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - TrendTurtles</title>
 
-<ul>
-  <li><a href="2k_but_lesspetrol_lessportfolio.html">Petrol Pump Story</a></li>
-</ul>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+    <a href="../index.html">
+        <img src="../logo.png" alt="TrendTurtles Logo">
+    </a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav id="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../services.html">Services</a>
+        <a href="../strategy.html">Strategy</a>
+        <a href="/blog/index.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Blog</h1>
+    <p>
+        Market insights, stories, and weekly breakdowns from Neo & Teo.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Latest Posts</h2>
+
+    <ul>
+        <li>
+            <a href="2k_but_lesspetrol_lessportfolio.html">
+                Petrol Pump Pe Khade Khade Neo Ne Woh Bataya
+            </a>
+        </li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>© 2017 TrendTurtles. All rights reserved.</p>
+</footer>
+
+<!-- Java Script -->
+<script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-menu");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

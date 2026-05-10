@@ -4,6 +4,7 @@ body {
     background: #f3f5f7;
     color: #111;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 /* Header */
@@ -24,7 +25,7 @@ nav a {
     margin-left: 20px;
     text-decoration: none;
     color: #111;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 nav a:hover {
@@ -39,52 +40,59 @@ nav a:hover {
     border-bottom: 1px solid #e6e6e6;
 }
 
-/* HERO IMAGE FIX */
+/* Hero Image */
 .hero-img {
     width: 100%;
+    max-width: 760px;
     height: auto;
-    max-height: 350px;
-    object-fit: contain;
-    border-radius: 6px;
-    margin-bottom: 25px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 18px;
 }
 
 /* Hero Text */
 .hero h1 {
-    font-size: 40px;
-    margin-bottom: 12px;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #111;
+    font-weight: 800;
+    margin-bottom: 16px;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #444;
-    max-width: 700px;
-    margin: auto;
+    font-size: 22px;
+    color: #666;
+    max-width: 750px;
+    margin: 20px auto 0;
+    line-height: 1.8;
 }
 
 /* Sections */
 .section {
     max-width: 950px;
     margin: 30px auto;
-    padding: 25px 30px;
+    padding: 35px 40px;
     background: #ffffff;
     border-radius: 6px;
     border: 1px solid #eaeaea;
 }
 
-/* Section Heading */
+/* Blog Body Text */
+.section p {
+    font-size: 21px;
+    line-height: 2;
+    color: #1f1f1f;
+    margin-bottom: 28px;
+}
+
+/* Section Headings */
 .section h2 {
-    margin-bottom: 12px;
-    font-size: 24px;
-}
-
-/* Section List */
-.section ul {
-    padding-left: 18px;
-}
-
-.section li {
-    margin-bottom: 8px;
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    color: #4c5fd5;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 /* Footer */
@@ -94,91 +102,23 @@ footer {
     background: #ffffff;
     border-top: 1px solid #e6e6e6;
     margin-top: 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 }
 
-/* ------------- Mobile fix ------------ */
-
+/* Global Box Sizing */
 * {
     box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-
-    /* Header becomes vertical */
-    header {
-        flex-direction: column;
-        padding: 15px 20px;
-    }
-
-    /* Navigation stacks */
-    nav {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 8px 0;
-        font-size: 16px;
-    }
-
-    /* Hero text scaling */
-    .hero h1 {
-        font-size: 26px;
-    }
-
-    .hero p {
-        font-size: 15px;
-        padding: 0 10px;
-    }
-
-    /* Sections padding fix */
-    .section {
-        margin: 20px 15px;
-        padding: 20px;
-    }
-
-    /* Section heading smaller */
-    .section h2 {
-        font-size: 20px;
-    }
-}
-
-/* Hide hamburger on desktop */
+/* Hamburger */
 .menu-toggle {
     display: none;
     font-size: 26px;
     cursor: pointer;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    nav a {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-}
-
+/* Blog Index */
 .blog-list {
     display: flex;
     flex-direction: column;
@@ -190,7 +130,7 @@ footer {
     display: block;
     text-decoration: none;
     color: inherit;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid #d9d9d9;
     padding-bottom: 40px;
     margin-bottom: 40px;
     transition: 0.3s ease;
@@ -210,64 +150,14 @@ footer {
 
 .blog-content h3 {
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 28px;
 }
 
 .blog-content p {
     opacity: 0.8;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .blog-card img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-/* =========================
-   BLOG PAGE IMPROVEMENTS
-========================= */
-
-.section {
-    max-width: 850px;
-    margin: auto;
-}
-
-/* Main Blog Title */
-.hero h1 {
-    font-size: 40px;
-    line-height: 1.2;
-    color: #111;
-    font-weight: 800;
-}
-
-/* Hero Description */
-.hero p {
-    font-size: 18px;
-    color: #666;
-    max-width: 750px;
-    margin: 20px auto 0;
     line-height: 1.8;
-}
-
-/* Blog Body Text */
-.section p {
-    font-size: 16px;
-    line-height: 2;
-    color: #1f1f1f;
-    margin-bottom: 24px;
-}
-
-/* Section Headings */
-.section h2 {
-    font-size: 24px;
-    margin-top: 70px;
-    margin-bottom: 25px;
-    color: #4c5fd5;
-    font-weight: 700;
-    line-height: 1.4;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 /* Dialogue Styling */
@@ -276,13 +166,13 @@ footer {
     font-weight: 500;
 }
 
-/* Data/Stats Highlight */
+/* Data Highlight */
 .section p strong {
     color: #0d9488;
     font-weight: 700;
 }
 
-/* Source Text */
+/* Source Box */
 .source-text {
     background: rgba(76, 95, 213, 0.08);
     border-left: 4px solid #4c5fd5;
@@ -290,10 +180,10 @@ footer {
     border-radius: 10px;
     color: #555;
     margin: 30px 0;
-    font-size: 0.96rem;
+    font-size: 18px;
 }
 
-/* Trigger Blocks */
+/* Trigger Box */
 .trigger-box {
     background: rgba(76, 95, 213, 0.05);
     border: 1px solid rgba(76, 95, 213, 0.15);
@@ -302,44 +192,81 @@ footer {
     margin: 30px 0;
 }
 
-/* Hero Image */
-.hero-img {
-    width: 100%;
-    max-width: 760px;
-    height: auto;
-    display: block;
-    margin: 40px auto;
-    border-radius: 18px;
-}
-
 /* Back Link */
 .section a {
     color: #4c5fd5;
     font-weight: 600;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .section a:hover {
     text-decoration: underline;
 }
 
-/* Mobile */
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
     .hero h1 {
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .section {
+        margin: 20px 15px;
+        padding: 25px;
     }
 
     .section p {
-        font-size: 1rem;
+        font-size: 18px;
         line-height: 1.9;
     }
 
     .section h2 {
-        font-size: 1.4rem;
+        font-size: 26px;
+    }
+
+    .blog-card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .blog-content h3 {
+        font-size: 24px;
+    }
+
+    .blog-content p {
+        font-size: 16px;
     }
 }

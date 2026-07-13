@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 50px;
+    padding: 22px 60px;
     background: #ffffff;
     border-bottom: 1px solid #e6e6e6;
 }
@@ -52,7 +52,7 @@ nav a:hover {
 
 /* Hero Text */
 .hero h1 {
-    font-size: 48px;
+    font-size: 54px;
     line-height: 1.2;
     color: #111;
     font-weight: 800;
@@ -60,20 +60,29 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: 22px;
+    font-size: 20px;
     color: #666;
-    max-width: 750px;
+    max-width: 800px;
     margin: 20px auto 0;
     line-height: 1.8;
+}
+.hero .eyebrow {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 12px;
+    font-weight: 600;
 }
 
 /* Sections */
 .section {
-    max-width: 950px;
+    max-width: 900px;
     margin: 30px auto;
     padding: 35px 40px;
     background: #ffffff;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid #eaeaea;
 }
 
@@ -84,15 +93,26 @@ nav a:hover {
     color: #1f1f1f;
     margin-bottom: 28px;
 }
+.section ul {
+    margin: 18px 0 28px;
+    padding-left: 24px;
+}
+
+.section li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
 
 /* Section Headings */
 .section h2 {
     font-size: 32px;
     margin-top: 70px;
     margin-bottom: 25px;
-    color: #4c5fd5;
+    color: #1b365d;
     font-weight: 700;
     line-height: 1.4;
+    padding-top: 30px;
+    border-top: 1px solid #ececec;
 }
 
 /* Footer */
@@ -158,12 +178,6 @@ footer {
     line-height: 1.8;
     margin-bottom: 10px;
     font-size: 18px;
-}
-
-/* Dialogue Styling */
-.section p:has(—) {
-    color: #204080;
-    font-weight: 500;
 }
 
 /* Data Highlight */

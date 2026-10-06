@@ -2,6 +2,38 @@
 
 Single source of truth for this blog rebuild. Refer here before asking me the same question twice.
 
+## Copy-Paste Prompts
+
+Paste one of these into any chat — a brand new one with no prior memory included — and nothing else should need to be said. Each is self-sufficient: it points at this file and `blog/POST_TEMPLATE.md`, which hold every rule, so the prompts themselves stay short instead of duplicating the rulebook (and never go stale when the rulebook changes).
+
+**New cluster (regular) post:**
+> You're working on the TrendTurtles blog at this repo. You have no memory of any prior conversation — everything you need is in this repo. First, read `blog/CONSTITUTION.md` in full, start to end, and `blog/POST_TEMPLATE.md` in full. They are the complete, current rulebook — follow every rule in them exactly, including corrections logged in §8/§9, not just a first-pass version of a rule.
+>
+> Then write and publish one new cluster post. Topic: `[give a topic, or leave blank and find one yourself]`.
+>
+> Do this in order, without asking me anything unless you're genuinely blocked (can't find a real specific problem, can't verify a core fact):
+> 1. Check §5a's theme-depth rule first. If the current theme needs a pillar post before another cluster, tell me that instead of writing a cluster anyway.
+> 2. Run the full §5 pipeline end to end: evergreen validation, find the actual specific real searched problem (not a generic topic) via web research, gap-analysis against what's already ranking, name the real-world audience segments (§3a), keyword-mapped outline, Ogilvy-voice draft (§3), light/simple English, mandatory solution section + comparison table, black+blue palette only (§6a), full SEO including JSON-LD (§6), generate its share-card image via `blog/generate-share-image.ps1` with an ABSOLUTE `-OutputPath` (known gotcha, §8).
+> 3. Add it to `blog/index.html`'s listing, update the §9 log, commit and push.
+> 4. Generate the social copy per §4b: one LinkedIn main post, one X thread (4-5 tweets), and 2-3 standalone punch posts for each platform.
+>
+> End your final message with the complete, ready-to-copy-paste text for the LinkedIn main post, the numbered X thread, and all punch posts for both platforms — clearly labeled, including which day of the week each punch is meant for per §4b.
+
+**New pillar (evergreen) post:**
+> You're working on the TrendTurtles blog at this repo. You have no memory of any prior conversation. First, read `blog/CONSTITUTION.md` in full and `blog/POST_TEMPLATE.md` in full — they are the complete current rulebook.
+>
+> Write and publish one new pillar post. Theme: `[broad topic]`.
+>
+> Do this in order:
+> 1. Check §9's log for which cluster posts already exist under this theme, to link down to.
+> 2. Follow §5a: broad, checklist/principle-style, evergreen — not built around a number that will go stale (§5b) — names real-world audience segments (§3a), links to every existing cluster post under this theme.
+> 3. Research real, common checklist items/mistakes for this theme via web search, same rigor as §5 step 2 (real, not generic).
+> 4. Draft an outline and show it to me before writing the full post — this is the one checkpoint pillar posts keep, since they're more structural. Everything else, proceed without asking.
+> 5. Once I approve the outline: full SEO, black+blue palette, share-image, add to `blog/index.html`, update §9, commit+push.
+> 6. Generate social copy per §4b, same as a cluster post.
+>
+> End your final message with the outline for my review first; once approved and published, follow up with the ready-to-copy-paste LinkedIn/X/punch content.
+
 ## 0. Start Here (read this first — for a fresh session with no prior memory)
 
 **What this is**: TrendTurtles is a quantitative trading technology company (prop trading, not public advisory — see disclaimer in §2). This repo is its static HTML/CSS site (GitHub Pages, no build tools, no framework), domain `trendturtles.com`. This file governs a rebuild of `/blog/` from a fictional-dialogue "story" format into direct, factual, Ogilvy-style finance/stock-market content.
@@ -18,7 +50,7 @@ Single source of truth for this blog rebuild. Refer here before asking me the sa
 - Root content pages (`index.html`, `about.html`, `contact.html`, `products-services.html`, `style.css`) — off-limits content by default (§1) — edit only on an explicit, specific instruction, logged as an exception in §8.
 - Root technical infra (`sitemap.xml`, `robots.txt`, `404.html`, `.nojekyll`, `favicon-512.png`, `apple-touch-icon.png`) — built 2026-10-06, shared by the whole site, not "blog only."
 
-**To continue the work cold**: use the two standing prompts in §4a (one for a regular/cluster post, one for a pillar post). Everything those prompts need to behave correctly — voice, pipeline, SEO checklist, colour rules — is in this file; they don't depend on chat history.
+**To continue the work cold**: use the two standing prompts at the very top of this file, under "Copy-Paste Prompts" (one for a regular/cluster post, one for a pillar post). Everything those prompts need to behave correctly — voice, pipeline, SEO checklist, colour rules — is in this file; they don't depend on chat history.
 
 **Git discipline**: every meaningful change in this project should be committed and pushed to `origin main` before the session ends — this file and the published posts are the entire recoverable state if the local machine is lost. If you're picking this up fresh: run `git log --oneline -15` and `git status` first to see exactly what's already live vs. locally uncommitted.
 
@@ -114,9 +146,7 @@ Merged from two reference methods (evergreen-book-topic method + local-SEO Claud
 - A theme counts as having reasonable depth once it has **1 pillar + at least 3-4 cluster posts**. Don't start a new theme before the current one reaches that depth — a half-filled theme (1-2 posts, then abandoned for a new topic) builds weak topical authority; a handful of themes each taken to real depth builds strong authority. This is standard topic-cluster SEO practice, not a TrendTurtles-specific preference.
 - Once a theme hits that depth, decide per real signal: keep adding clusters if gap-analysis keeps surfacing genuine new problems in it, or start the next theme's pillar if it's thinning out.
 - Rough shape at 2-3/week: a theme (pillar + ~4 clusters) takes about 2 weeks to reach depth, then the next theme starts. **Gold theme status**: 1 cluster live (making charges), pillar still not started — pillar should be next, per this rule, before adding more gold clusters.
-- Two standing prompts the user can send to trigger a post (kept here so they survive even if the chat history doesn't):
-  - **Cluster/regular**: "Naya cluster blog post likho aur publish karo. Topic: `[topic or blank]`. `blog/CONSTITUTION.md` aur `blog/POST_TEMPLATE.md` follow karo — specific real searched problem dhundo, audience segments naam lo, Ogilvy-style simple English, solution + comparison section, black+blue colors, full SEO. `blog/index.html` mein add karo, §9 log update karo, commit+push karo. §4b ke social copy bhi generate karo."
-  - **Pillar/evergreen**: "Naya pillar blog post likho aur publish karo. Theme: `[broad topic]`. §5a follow karo — broad, checklist-style, evergreen, existing cluster posts ko link karo. Pehle outline do review ke liye, phir publish karo. §4b ke social copy bhi generate karo."
+- The two standing copy-paste prompts live in one place only — the top of this file, under **"Copy-Paste Prompts"** — so there's a single source of truth. Don't re-add them here.
 
 ## 4b. Social Promotion (LinkedIn + X)
 

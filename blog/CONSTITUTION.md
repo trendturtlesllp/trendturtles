@@ -80,6 +80,17 @@ Merged from two reference methods (evergreen-book-topic method + local-SEO Claud
 - **Only attribute a specific number to a specific named company/entity if there's one traceable source for that exact figure.** A vague or AI-summarized claim ("Brand X charges 13-33%") is not citable unless you can point to the actual page it came from. When in doubt, use a verified case (a named, dated, sourced example) instead of a loosely-attributed statistic.
 - **No "Related Reading" section until there's actually something to link to.** Don't show a placeholder or empty links block on the first few posts — add the section once a second relevant post exists.
 
+## 4a. Publishing Cadence
+
+**Daily**, cluster posts — decided 2026-10-06, against the recommendation (3x/week) given the quality risk below. User's call, noted so the tradeoff is explicit, not forgotten.
+
+- **The risk accepted**: daily output only works if every post still gets genuine research, gap-analysis, and an Ogilvy-quality editing pass (the gold post took 4 revision rounds to get right). Rushing to hit a daily quota on finance/YMYL content, if quality slips, reads as a content-farm pattern to Google and to readers — worse than publishing less often. Daily is fine as a target; it is not an excuse to skip §5 pipeline steps.
+- **If a day's research doesn't turn up a genuinely specific, real, searched problem** (§5 step 2) — don't force a generic post out to hit the quota. Skip that day, or write a pillar post, or extend the cluster topic list, rather than lower the bar.
+- Pillar posts are occasional, not part of the daily cadence — written when a new theme starts (see §5a).
+- Two standing prompts the user can send to trigger a post (kept here so they survive even if the chat history doesn't):
+  - **Cluster/regular**: "Naya cluster blog post likho aur publish karo. Topic: `[topic or blank]`. `blog/CONSTITUTION.md` aur `blog/POST_TEMPLATE.md` follow karo — specific real searched problem dhundo, audience segments naam lo, Ogilvy-style simple English, solution + comparison section, black+blue colors, full SEO. `blog/index.html` mein add karo, §9 log update karo, commit+push karo."
+  - **Pillar/evergreen**: "Naya pillar blog post likho aur publish karo. Theme: `[broad topic]`. §5a follow karo — broad, checklist-style, evergreen, existing cluster posts ko link karo. Pehle outline do review ke liye, phir publish karo."
+
 ## 5a. Content Architecture — Pillar + Cluster
 
 A single deep-dive post only ranks for the specific query it targets. Someone earlier in their research (e.g. about to buy gold, but doesn't yet know to search "making charges" specifically) won't find it. Fix: build each evergreen theme as a **pillar + cluster**, not isolated one-off posts.

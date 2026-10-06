@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Blog-only additions. Loaded alongside ../style.css on every page in /blog/.
+   Loaded AFTER style.css, so rules here intentionally override it — scoped
+   to blog pages only, without ever editing the root stylesheet.
+
+   Palette: plain text is black (serif, inherited from style.css). Blue is
+   used only for links and small highlights. Nothing else. This overrides
+   style.css's navy headings (.section h2) and teal strong-text (.section
+   p strong) on blog pages specifically, per the "too many colours" note —
+   the root stylesheet itself is out of scope to edit directly.
+   ========================================================================== */
+
+:root {
+    --ink: #111;
+    --link-blue: #4c5fd5;
+}
+
+/* Override root style.css colour choices, blog pages only */
+.section h2 {
+    color: var(--ink);
+}
+
+.section strong,
+.section p strong {
+    color: var(--ink);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.breadcrumb a {
+    color: var(--link-blue);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb .current {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+/* Byline */
+.byline {
+    color: var(--ink);
+    font-size: 1.05rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+/* Pull Quote — blue used here as the one deliberate highlight */
+.pull-quote {
+    background: rgba(76, 95, 213, 0.06);
+    border-left: 4px solid var(--link-blue);
+    padding: 1rem 1.25rem;
+    margin: 1.75rem 0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--ink);
+    font-style: italic;
+}
+
+/* Key Takeaways */
+.key-takeaways {
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 1.5rem 1.75rem;
+    margin: 2rem 0;
+}
+
+.key-takeaways h2 {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
+}
+
+.key-takeaways ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.key-takeaways li {
+    margin-bottom: 0.6rem;
+    line-height: 1.7;
+}
+
+/* FAQ */
+.faq {
+    margin: 2rem 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 1rem 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: var(--ink);
+}
+
+.faq-item p {
+    margin: 0;
+}
+
+/* Related Reading */
+.related-reading {
+    margin: 2rem 0;
+}
+
+.related-reading h2 {
+    margin-top: 0;
+}
+
+.related-reading ul {
+    padding-left: 1.25rem;
+}
+
+.related-reading li {
+    margin-bottom: 0.6rem;
+}
+
+/* Disclaimer */
+.disclaimer {
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.disclaimer a {
+    color: var(--link-blue);
+}
+
+/* Comparison / data tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+    color: var(--ink);
+}
+
+table th,
+table td {
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+table tr:first-child th,
+table tr:first-child td {
+    border-bottom: 2px solid var(--ink);
+}
+
+table tr:last-child td {
+    border-bottom: 2px solid var(--ink);
+}
+
+table td:not(:first-child),
+table th:not(:first-child) {
+    text-align: right;
+}
+
+/* Chart Figure */
+figure.chart {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figure.chart img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+figure.chart figcaption {
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-top: 0.5rem;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+    .key-takeaways {
+        padding: 1.25rem;
+    }
+
+    .pull-quote {
+        font-size: 1.05rem;
+        padding: 0.9rem 1.1rem;
+    }
+}

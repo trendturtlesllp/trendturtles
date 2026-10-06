@@ -1,0 +1,135 @@
+# TrendTurtles Blog — Constitution
+
+Single source of truth for this blog rebuild. Refer here before asking me the same question twice.
+
+## 1. Scope (current)
+
+- Work is confined to `/blog/` only. Root site pages (`index.html`, `about.html`, `contact.html`, `products-services.html`) and root infra (`sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage schema) are **out of scope for now** — deferred, not cancelled.
+- Flat URL structure: `/blog/<keyword-slug>.html`. No category subfolders.
+- Strictly Finance / Stock Market topics, India-focused (SEBI, RBI, NSE, AMFI, exchange filings as primary sources).
+- Old "Neo & Teo" story-format posts and cartoon images: delete, don't migrate.
+
+## 2. Voice & Author
+
+- Byline on every post: **Mayank Gola, TrendTurtles**.
+- Strict Ogilvy style: no fictional dialogue, no cartoon illustrations, no "story" framing. Direct, factual, benefit-led.
+- Every post links to the existing "not investment advice" disclaimer (`contact.html`) — one sentence, bottom of post. (Linking to it is fine without editing the page itself.)
+
+## 3. Ogilvy Principles We Follow
+
+Source: *Confessions of an Advertising Man* / *Ogilvy on Advertising*.
+
+- **Headline does 80% of the work** — 5x more people read the headline than the body. Every headline must contain a specific fact or number, and must not be "blind" (reader should understand the benefit without reading further). Model: *"At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock"* — specificity over hype.
+- **"The consumer is not a moron, she is your wife."** Never condescend, never trick, never clickbait.
+- **Long copy sells when the subject needs explaining.** Finance topics qualify — don't artificially shorten, but never pad either.
+- **Tell the truth, but make the truth fascinating.** Lead with the single most interesting true fact (news-lead, not scene-setting).
+- **Research the product before writing the ad.** Here: pull the real data/numbers before drafting — ties directly into the pipeline's gap-analysis step.
+- **No jargon without a plain explanation in the same breath.** People buy what they understand fastest.
+- **If an image is used, caption it.** Captions are among the most-read words on a page.
+
+## 3a. Audience & Language Rule
+
+- **Not boring.** Every article must be genuinely engaging — real examples, real numbers, a reason to keep reading. Dry fact-listing is a failure, even if accurate.
+- **No heavy financial jargon.** If a technical term is truly unavoidable, explain it in plain words in the same sentence, the moment it appears — never assume prior knowledge.
+- **Write for the real person this specific topic actually serves — not a generic "investor."** Before outlining any article, identify the actual real-world segments who have a reason to read it, and keep all of them in mind while writing. Example — an article on gold investing is not just for "investors." It should also speak to: the common buyer purchasing gold for a gift, a family buying for a wedding, a regular retail investor, a woman buying jewellery, and a local gold shop owner/dealer. Each of these reads with a different question in mind; good copy answers more than one of them without turning into separate articles.
+- This rule applies to every topic, not just gold — at the outline stage (pipeline step 3), explicitly name the 3-5 real-world reader segments for that topic before writing.
+- **Keep sentences short and words simple.** First draft of post #1 read as too heavy/formal — cut subordinate clauses, prefer two short sentences over one long one, avoid formal/legal-sounding phrasing (e.g. say "a consumer court in Bangalore" not "the Additional District Consumer Disputes Redressal Forum") even when citing something formal.
+- **Every post must have an explicit, standalone "solution" section** — a short numbered list of exactly what to do, in plain action verbs. Explaining the problem well is not enough; a reader should be able to skip straight to this section and know what to do.
+- **Every post must have at least one comparison that makes the abstract concrete** — e.g. "Shop A vs Shop B vs Shop C," "Option 1 vs Option 2," a before/after. A single worked example is good; a comparison across 2-3 real alternatives is what actually makes the point land and is what was missing from the first draft of post #1.
+
+## 4. Competitive Benchmark
+
+Researched traffic leaders, what to take from each:
+
+| Source | Why it works | Lesson for us |
+|---|---|---|
+| Moneycontrol (154M visits/mo), Economic Times | Data + news velocity | Not our lane — we're evergreen explainer, not news wire |
+| Zerodha Varsity | Free, plain-language, no paywall, no ads — 124 countries, huge organic backlinks | Plain language + genuinely free depth beats cleverness |
+| Safal Niveshak | "Simplicity & humility," 90k+ loyal readers | Respect the reader's intelligence, stay humble, stay simple |
+| Capitalmind, Freefincal | Data-led, India-specific, credible | India-specific primary-source data wins trust |
+| Morgan Housel / Collaborative Fund | Behavioral finance told through real psychology + real data, zero fiction | Depth and narrative pull can come from *true* stories/data, not invented dialogue |
+| Ben Carlson / A Wealth of Common Sense | Cuts through noise, concise | Brevity where the point is simple; don't pad |
+| Nick Maggiulli / Of Dollars and Data | Data-first, approachable analogies | Analogies to explain data, not to replace it |
+
+**Conclusion:** the highest-traffic finance writing is plain-language, free, genuinely educational, heavy on real data — never invented-story fiction. This confirms dropping Neo & Teo for direct Ogilvy-style copy.
+
+## 5. Content Pipeline
+
+Merged from two reference methods (evergreen-book-topic method + local-SEO Claude Code method), stripped of everything not applicable to a content blog:
+
+1. **Evergreen validation** — topic must be a genuine, recurring problem, not a one-off news event.
+2. **Find the specific, real, searched problem — not a generic category.** Picking an evergreen *category* (e.g. "gold investing") is not enough and is not a topic by itself. Within that category, search actual complaints, forum threads (Reddit, Quora, consumer-complaint sites), and reviews to find the exact, specific pain point real people are searching about (e.g. not "gold investing" but "gold making charges are too high" — a precise, named, searched problem with real complaint data behind it). The article's headline and angle come from this specific problem, never from a generic "X vs Y comparison" or "beginner's guide" framing picked without this step. This is the "3-star review" step from the source method — do not skip it or substitute it with a generic competitor-content scan.
+3. **Keyword-mapped outline** — name the 3-5 real-world reader segments this topic actually serves (see §3a), then build H2/H3 structure targeting the primary keyword + long-tail variants + the specific gap found in step 2, written so it speaks to those segments in plain language.
+4. **Draft** — strict Ogilvy voice, simple/short English, short paragraphs, every claim cited and hyperlinked to a primary source.
+5. **Self-edit pass** — cut fluff, shorten sentences, remove anything that reads AI-generated or repetitive.
+6. **SEO finalize** (post-level only — see §6).
+7. **Publish** inside `/blog/`, add to the blog index listing.
+
+## 6. SEO Checklist (per post, post-level only — no root files touched yet)
+
+- `<title>` ~50–60 chars, unique, primary keyword near the front
+- `<meta name="description">` ~150–160 chars, unique
+- `<link rel="canonical">` — absolute URL
+- OG tags (title/description/url/type=article/site_name) + Twitter card
+- `<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">`
+- JSON-LD: `BlogPosting` (headline, description, mainEntityOfPage, datePublished/dateModified, author: Person "Mayank Gola", publisher: Organization "TrendTurtles") + `BreadcrumbList` (must mirror visible breadcrumb exactly) + optional `FAQPage` (only if the post has a genuine Q&A section)
+- One `<h1>` per page, no skipped heading levels
+- URL slug: lowercase, hyphenated, keyword-first, **no dates baked in** (slugs are permanent — GitHub Pages has no server-side redirects)
+- Outbound citations to SEBI/RBI/NSE/AMFI (or the relevant regulator/authority for the topic — e.g. BIS for hallmarking) as normal followed links (`target="_blank" rel="noopener noreferrer"`)
+- If a published post is edited later: update `dateModified` and the visible byline date
+- **Only attribute a specific number to a specific named company/entity if there's one traceable source for that exact figure.** A vague or AI-summarized claim ("Brand X charges 13-33%") is not citable unless you can point to the actual page it came from. When in doubt, use a verified case (a named, dated, sourced example) instead of a loosely-attributed statistic.
+- **No "Related Reading" section until there's actually something to link to.** Don't show a placeholder or empty links block on the first few posts — add the section once a second relevant post exists.
+
+## 5a. Content Architecture — Pillar + Cluster
+
+A single deep-dive post only ranks for the specific query it targets. Someone earlier in their research (e.g. about to buy gold, but doesn't yet know to search "making charges" specifically) won't find it. Fix: build each evergreen theme as a **pillar + cluster**, not isolated one-off posts.
+
+- **Pillar post**: broad, evergreen, matches top-of-funnel searches (e.g. "things to check before buying gold," "gold buying guide India"). Short-ish, scannable, links out to every deep-dive under that theme.
+- **Cluster posts**: the specific, narrow, highly-searched problems (e.g. this making-charges post, a future HUID-verification post, a future jewellery-vs-coin post). Each links back up to the pillar, and sideways to sibling cluster posts once they exist (see §6's "Related Reading" rule).
+- When starting a new topic area (gold, mutual funds, F&O, whatever comes next), plan the pillar early — it doesn't have to be written first, but it should exist within the first 2-3 posts of that theme, not be an afterthought.
+- Do not try to make a single cluster post also rank for the pillar's broad query by stuffing in extra angles — keep each post narrow and specific (§5 step 2), and let the pillar do the broad-query job.
+
+**Gold theme status**: `gold-making-charges-india-real-cost` is cluster post #1. Pillar post ("what to check before buying gold" or similar) is planned, not yet written.
+
+## 5b. Specificity vs. Evergreen — Different Jobs for Different Posts
+
+A cluster post (§5a) earns its value FROM specific, dated numbers — a real worked example, a real rupee figure, a real court case. That specificity is the point, not a flaw to fix. Don't dilute a cluster post into vague generalities to chase "evergreen." Keep the real numbers.
+
+- If a cluster post stays live long enough that its worked example drifts far from current prices, **refresh it** — update `dateModified` and the numbers (existing §6 rule). Don't pre-emptively genericize it to dodge that maintenance.
+- Adding a percentage alongside a rupee figure (e.g. "~16% of the bill") is a fine, cheap bonus where it fits naturally — it survives price moves and costs nothing in specificity. But it's a nice-to-have, never a reason to soften or remove a real number.
+- **True evergreen content — the kind that shouldn't need refreshing — belongs in the pillar post (§5a), not the cluster post.** Principles, checklists, what-to-watch-for: things that stay true regardless of today's price. That's the right place to optimize for timelessness. A cluster post's job is to be sharply, specifically right about one problem, right now — not to be eternal.
+
+## 6a. Colour Palette
+
+Ogilvy recommends serif type and restraint. Keep it to two colours, full stop:
+
+- **Plain text: black** (`#111`, inherited from the root stylesheet's body colour). Headings, body copy, bold/emphasis — all black. No navy, no teal, no grey-tinted text.
+- **Blue, for links and highlights only** (`#4c5fd5` — this is the same blue the root stylesheet already uses for links, reused for consistency rather than introducing a second blue). Use it for: hyperlinks, and sparingly for one deliberate accent per post (e.g. a pull-quote's left border).
+- Neutral greys (`#e6e6e6`, `#f9f9f9`) are fine for structural chrome — box backgrounds, hairline borders — since they're not really "colour," just light/dark framing. Don't tint them blue or any other hue.
+- **The root `style.css` itself still uses navy headings and a teal `strong` highlight** (`.section h2`, `.section p strong`) — out of scope to edit directly. `blog/blog.css` overrides both of these back to black, scoped to blog pages only, by loading after `style.css` in the `<head>`. Any new blog.css class must follow the same two-colour rule.
+- Tables: no inline per-cell styling. `blog.css` styles the bare `<table>` tag generically (black text, black top/bottom border) — just write plain `<table><tr><td>` in post HTML.
+
+## 7. Images
+
+Only when a real chart/data visual adds genuine value — not a standard element of every post. No AI-generated illustration, no cartoon, no filler stock photo. When used: wrap in `<figure>+<figcaption>` citing the data source, write alt text that describes the insight (not keywords), descriptive filename, `loading="lazy"`.
+
+**A plain HTML table beats an image for simple numeric breakdowns** (e.g. a 4-5 row cost breakdown). Tables are more accessible, lighter, and just as readable — don't manufacture a chart image when a table does the job.
+
+## 8. Deferred (not in current scope, was in the original full-site plan)
+
+- Root page SEO (`index.html`, `about.html`, `contact.html`, `products-services.html`)
+- `sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage `Organization`/`WebSite` schema
+- Redirect stubs for old category-index URLs
+
+Revisit these once the blog-folder rebuild is approved and running.
+
+**One-off exception, 2026-10-06**: `contact.html` email updated to `trendturtlesllp@gmail.com` on explicit direct instruction. Not a scope change — the blog-folder-only boundary still holds; this was a single, specifically-named edit, not a reopening of root-page work in general.
+
+## 9. Published / Drafted Posts Log
+
+Tracks what exists, so topic selection never accidentally repeats and so this file stays the real source of truth as the blog grows.
+
+| Slug | Specific problem addressed | Audience segments named | Status |
+|---|---|---|---|
+| `gold-making-charges-india-real-cost` | Gold making charges/wastage are an undisclosed, negotiable cost (12-25%+) plus GST (3%+5%) that's never recovered on resale — illustrated with a verified consumer-court case (Kalyan Jewellers), a worked-example breakdown (₹26,625 lost on a ₹1.68L purchase), a shop-to-shop comparison (₹19,383 gap for the same necklace), a jewellery-vs-coin-vs-bar comparison, and a 4-step "what to do before you pay" section | Wedding/gift buyer, woman buying jewellery, retail investor comparing gold as an asset, (indirectly) honest gold dealers wanting transparency | Drafted 2026-10-06, revised same day (lighter language, added solution + comparison sections, simplified to black+blue palette, reframed the core number as ~16% alongside the rupee figure), reviewed by user, **published 2026-10-06** (added to `blog/index.html` listing, committed and pushed) |
+| *(planned)* Gold pillar post — "what to check before buying gold" | Broad, top-of-funnel gold-buying research query, not yet a specific post | Buyer at the very start of research (hasn't yet thought "making charges" specifically) | Not started — see §5a |

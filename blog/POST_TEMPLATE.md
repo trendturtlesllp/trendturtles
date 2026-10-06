@@ -6,6 +6,12 @@ Before filling this in, finish constitution §5 steps 1–3 (evergreen validatio
 
 This file is markdown, not `.html` — it will never be served as a live page, so it's safe to leave in the repo as a permanent reference.
 
+**Before publishing, generate this post's share-card image** (fixes broken link previews on X/LinkedIn — every post needs an `og:image`, independent of whether it has a content image):
+```
+pwsh blog/generate-share-image.ps1 -Headline "[post <title> text]" -OutputPath "E:\Clone\Blog\trendturtles\assets\images\[SLUG]-share.png"
+```
+Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative paths resolve against the process's current directory, not necessarily where you expect, and fail with a GDI+ error).
+
 ```html
 <!DOCTYPE html>
 <html lang="en-IN">
@@ -21,11 +27,16 @@ This file is markdown, not `.html` — it will never be served as a live page, s
     <meta property="og:url" content="https://trendturtles.com/blog/[SLUG].html">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="TrendTurtles">
-    <!-- og:image only if this post uses a real chart image -->
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://trendturtles.com/assets/images/[SLUG]-share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="[OG TITLE]">
     <meta name="twitter:description" content="[OG DESCRIPTION]">
+    <meta name="twitter:image" content="https://trendturtles.com/assets/images/[SLUG]-share.png">
     <link rel="canonical" href="https://trendturtles.com/blog/[SLUG].html">
+    <link rel="icon" href="/favicon-512.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="blog.css">
     <script type="application/ld+json">
@@ -38,6 +49,7 @@ This file is markdown, not `.html` — it will never be served as a live page, s
         "datePublished": "[YYYY-MM-DD]",
         "dateModified": "[YYYY-MM-DD]",
         "inLanguage": "en-IN",
+        "image": "https://trendturtles.com/assets/images/[SLUG]-share.png",
         "author": {
             "@type": "Person",
             "name": "Mayank Gola",
@@ -46,7 +58,13 @@ This file is markdown, not `.html` — it will never be served as a live page, s
         "publisher": {
             "@type": "Organization",
             "name": "TrendTurtles",
-            "url": "https://trendturtles.com/"
+            "url": "https://trendturtles.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://trendturtles.com/favicon-512.png",
+                "width": 512,
+                "height": 512
+            }
         }
     }
     </script>
@@ -197,5 +215,7 @@ This file is markdown, not `.html` — it will never be served as a live page, s
 - [ ] No invented dialogue, no cartoon illustration
 - [ ] Slug is lowercase, hyphenated, keyword-first, no date baked in
 - [ ] `BreadcrumbList` JSON-LD (if added) mirrors the visible breadcrumb exactly
+- [ ] Share-card image generated (`generate-share-image.ps1`, absolute `-OutputPath`), and `og:image`/`twitter:image`/JSON-LD `image` all point to it
 - [ ] Added as a card to `blog/index.html`'s listing, replacing/joining the placeholder text
 - [ ] Linked from `related-reading` on at least one other existing post, once there is one
+- [ ] Added as a `<url>` entry to `/sitemap.xml`

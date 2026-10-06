@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /blog/CONSTITUTION.md
+Disallow: /blog/POST_TEMPLATE.md
+Disallow: /blog/generate-share-image.ps1
+
+Sitemap: https://trendturtles.com/sitemap.xml

@@ -7,14 +7,16 @@ Single source of truth for this blog rebuild. Refer here before asking me the sa
 **What this is**: TrendTurtles is a quantitative trading technology company (prop trading, not public advisory — see disclaimer in §2). This repo is its static HTML/CSS site (GitHub Pages, no build tools, no framework), domain `trendturtles.com`. This file governs a rebuild of `/blog/` from a fictional-dialogue "story" format into direct, factual, Ogilvy-style finance/stock-market content.
 
 **Where things stand** (update this line whenever status changes materially — treat it as the current pointer, not a historical log; full history is in §9 and in `git log`):
-> As of 2026-10-06: blog rebuilt flat, 1 cluster post published (`gold-making-charges-india-real-cost.html`), daily cluster-post cadence agreed, gold pillar post planned but not started, site-wide link/heading audit done, root-page SEO buildout (meta/canonical/OG/schema/sitemap/robots) still deferred.
+> As of 2026-10-06: blog rebuilt flat, 1 cluster post published (`gold-making-charges-india-real-cost.html`), daily cluster-post cadence agreed, gold pillar post planned but not started. Site-wide link/heading audit done. Root-page SEO buildout is also now done (meta/canonical/OG/Twitter/JSON-LD on all 6 pages, favicon, sitemap.xml, robots.txt, 404.html, .nojekyll, branded og:image on every page) — see §8. Content/copy on root pages is still off-limits by default (§1); only the technical/SEO layer was touched.
 
 **File map**:
 - `blog/CONSTITUTION.md` (this file) — all rules: scope, voice, SEO checklist, colour palette, pipeline, cadence, log of every post and every decision.
 - `blog/POST_TEMPLATE.md` — the literal copy-paste HTML skeleton + checklist for a new post. Markdown, never served as a real page.
+- `blog/generate-share-image.ps1` — reusable script, renders the 1200×630 branded og:image/twitter:image card every post needs (see §8).
 - `blog/blog.css` — blog-only CSS (loaded after root `../style.css`, overrides a few of its colour choices on blog pages only — see §6a).
 - `blog/*.html` (flat, no subfolders) — the actual published posts, plus `blog/index.html` as the hub.
-- Root (`index.html`, `about.html`, `contact.html`, `products-services.html`, `style.css`) — the rest of the site. Mostly out of scope (§1) — edit only on an explicit, specific instruction, and log the exception in §8.
+- Root content pages (`index.html`, `about.html`, `contact.html`, `products-services.html`, `style.css`) — off-limits content by default (§1) — edit only on an explicit, specific instruction, logged as an exception in §8.
+- Root technical infra (`sitemap.xml`, `robots.txt`, `404.html`, `.nojekyll`, `favicon-512.png`, `apple-touch-icon.png`) — built 2026-10-06, shared by the whole site, not "blog only."
 
 **To continue the work cold**: use the two standing prompts in §4a (one for a regular/cluster post, one for a pillar post). Everything those prompts need to behave correctly — voice, pipeline, SEO checklist, colour rules — is in this file; they don't depend on chat history.
 
@@ -22,7 +24,8 @@ Single source of truth for this blog rebuild. Refer here before asking me the sa
 
 ## 1. Scope (current)
 
-- Work is confined to `/blog/` only. Root site pages (`index.html`, `about.html`, `contact.html`, `products-services.html`) and root infra (`sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage schema) are **out of scope for now** — deferred, not cancelled.
+- Day-to-day work (new posts, content, voice, pipeline) is confined to `/blog/` only. Root site pages' **content/copy** (`index.html`, `about.html`, `contact.html`, `products-services.html`) stays off-limits by default — edit only on an explicit, specific instruction, and log it as an exception (§8).
+- Root **technical/SEO infrastructure** (`sitemap.xml`, `robots.txt`, `404.html`, `.nojekyll`, favicon, meta tags, JSON-LD on root pages) is no longer deferred — built out 2026-10-06 (§8) after a site-wide audit, since it's infrastructure shared by the whole site, not root-page content.
 - Flat URL structure: `/blog/<keyword-slug>.html`. No category subfolders.
 - Strictly Finance / Stock Market topics, India-focused (SEBI, RBI, NSE, AMFI, exchange filings as primary sources).
 - Old "Neo & Teo" story-format posts and cartoon images: delete, don't migrate.
@@ -146,11 +149,22 @@ Only when a real chart/data visual adds genuine value — not a standard element
 
 ## 8. Deferred (not in current scope, was in the original full-site plan)
 
-- Root page SEO (`index.html`, `about.html`, `contact.html`, `products-services.html`)
-- `sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage `Organization`/`WebSite` schema
-- Redirect stubs for old category-index URLs
+- ~~Root page SEO, `sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage `Organization`/`WebSite` schema~~ — **done 2026-10-06**, see below.
+- Redirect stubs for old category-index URLs — still not done (low priority, no known inbound links to the deleted category-index pages; `404.html` now exists as the minimum safety net).
 
-Revisit these once the blog-folder rebuild is approved and running.
+**Root-page SEO buildout + share-image fix, 2026-10-06** (user confirmed doing this now, after the link/technical audit surfaced it, plus a separate real bug report: article links posted to X/LinkedIn showed a broken-image preview):
+- **Root cause of the broken preview**: no page had an `og:image` at all, and the gold post has no in-body image (by design, §7) — social crawlers had nothing to show, hence a broken-image icon. The `POST_TEMPLATE.md` skeleton itself had the bug baked in: a comment saying "og:image only if this post uses a real chart image," which is wrong — `og:image` is a technical requirement for every page's share preview, independent of whether the post body has a content image. Fixed in the template so this can't recur.
+- **Fix**: `blog/generate-share-image.ps1` — a reusable script that renders a plain 1200×630 branded card (off-white background, blue top accent bar, TrendTurtles logo, black serif headline text). Not AI art, not a cartoon — same two-colour rule as §6a, just as a social-share asset instead of in-body content. Generates one default card (`assets/images/social-share-default.png`, used by root pages + blog hub) and one per-post card (`assets/images/gold-making-charges-share.png`, used by that post). Every future post generates its own via this script (now step 1 of publishing in `POST_TEMPLATE.md`).
+  - **Known gotcha, worth remembering**: the script's `Bitmap.Save()` throws a generic GDI+ error if `-OutputPath` is a relative path — PowerShell's `$PWD` and the .NET process's `Environment.CurrentDirectory` aren't reliably the same thing after `Set-Location`. Always pass an absolute path.
+- Added `og:image` + `twitter:image` (+ width/height) and switched `twitter:card` to `summary_large_image` on all 6 live pages, and added `image` to the gold post's `BlogPosting` JSON-LD.
+- Generated a square favicon (`favicon-512.png`, navy background, white "TT" serif monogram — `logo.png` itself is a 355×91 wordmark, not usable as a favicon or schema `Organization.logo`) plus `apple-touch-icon.png` (180×180). Linked from all 6 pages; used as `Organization.logo`/`publisher.logo` in JSON-LD.
+- Added full `<meta name="description">`, canonical, OG, Twitter, and `robots` meta to all 4 root pages; `lang="en"` → `lang="en-IN"` site-wide.
+- Added `Organization` + `WebSite` JSON-LD (`@graph`) to `index.html` — `Organization.sameAs` links the existing social profiles (LinkedIn/Facebook/Instagram/YouTube, already in use on the blog's `Blog` JSON-LD).
+- Added root `/sitemap.xml` (6 URLs, `<loc>`+`<lastmod>` only — no `changefreq`/`priority`, Google ignores both) and `/robots.txt` (allow all, points at the sitemap, disallows the two `.md` reference files and the `.ps1` script from being crawled as if they were content).
+- Added `/404.html` (branded, `noindex`) — GitHub Pages serves this natively for any unmatched path.
+- Added `/.nojekyll` — **this repo had no `.nojekyll` and no `_config.yml`, so GitHub Pages was running default Jekyll processing on every deploy.** Turned out to be low-risk in practice (`CONSTITUTION.md`/`POST_TEMPLATE.md` have no YAML front matter, so Jekyll was passing them through as raw files rather than converting them to HTML pages — confirmed, not assumed) but there was no reason to leave Jekyll processing enabled for a hand-authored static site that uses none of its features. `.nojekyll` makes GitHub Pages serve every file exactly as committed, with no transformation layer and no surprises later.
+
+Revisit the remaining item (old-URL redirect stubs) if it ever turns out those deleted pages had real inbound links.
 
 **One-off exception, 2026-10-06**: `contact.html` email updated to `trendturtlesllp@gmail.com` on explicit direct instruction. Not a scope change — the blog-folder-only boundary still holds; this was a single, specifically-named edit, not a reopening of root-page work in general.
 

@@ -115,8 +115,23 @@ Merged from two reference methods (evergreen-book-topic method + local-SEO Claud
 - Once a theme hits that depth, decide per real signal: keep adding clusters if gap-analysis keeps surfacing genuine new problems in it, or start the next theme's pillar if it's thinning out.
 - Rough shape at 2-3/week: a theme (pillar + ~4 clusters) takes about 2 weeks to reach depth, then the next theme starts. **Gold theme status**: 1 cluster live (making charges), pillar still not started — pillar should be next, per this rule, before adding more gold clusters.
 - Two standing prompts the user can send to trigger a post (kept here so they survive even if the chat history doesn't):
-  - **Cluster/regular**: "Naya cluster blog post likho aur publish karo. Topic: `[topic or blank]`. `blog/CONSTITUTION.md` aur `blog/POST_TEMPLATE.md` follow karo — specific real searched problem dhundo, audience segments naam lo, Ogilvy-style simple English, solution + comparison section, black+blue colors, full SEO. `blog/index.html` mein add karo, §9 log update karo, commit+push karo."
-  - **Pillar/evergreen**: "Naya pillar blog post likho aur publish karo. Theme: `[broad topic]`. §5a follow karo — broad, checklist-style, evergreen, existing cluster posts ko link karo. Pehle outline do review ke liye, phir publish karo."
+  - **Cluster/regular**: "Naya cluster blog post likho aur publish karo. Topic: `[topic or blank]`. `blog/CONSTITUTION.md` aur `blog/POST_TEMPLATE.md` follow karo — specific real searched problem dhundo, audience segments naam lo, Ogilvy-style simple English, solution + comparison section, black+blue colors, full SEO. `blog/index.html` mein add karo, §9 log update karo, commit+push karo. §4b ke social copy bhi generate karo."
+  - **Pillar/evergreen**: "Naya pillar blog post likho aur publish karo. Theme: `[broad topic]`. §5a follow karo — broad, checklist-style, evergreen, existing cluster posts ko link karo. Pehle outline do review ke liye, phir publish karo. §4b ke social copy bhi generate karo."
+
+## 4b. Social Promotion (LinkedIn + X)
+
+No direct posting — no LinkedIn/X connector available. Every publish generates ready-to-paste copy; the user posts it manually. Decided 2026-10-06.
+
+**Per article, generate:**
+- 1 LinkedIn main post (native text, no link in the body — LinkedIn's algorithm suppresses reach on posts with outbound links. Put the URL in the first comment instead.)
+- 1 X thread, 4-5 tweets, link only in the last tweet
+- 2-3 standalone "punch" posts for each platform — short, one specific fact/number from the article each, not generic. Same content idea works for both platforms but write it native to each (LinkedIn: slightly fuller sentences; X: tighter). Link in the first comment (LinkedIn) / in-thread or in a reply (X) — never jammed into the main post text.
+
+**Timing — spread across the week, never stacked same-day** (decided over the "all at once" alternative, to avoid follower fatigue and the platforms' own same-day self-cannibalization of reach): publish-day gets the main post + thread; the 2-3 punches land on the following days, one per day, not bunched. At 2-3 articles/week this gives near-daily presence on both platforms without ever posting more than once a day about the same piece.
+
+**Every post leads with its own specific number/fact** — same Ogilvy rule as the blog itself (§3). Never a generic "new post is live" announcement.
+
+**Expectation check**: this is for referral traffic and brand visibility, not SEO "link building" in the technical sense — social links are typically `nofollow` and don't pass direct ranking equity to Google. Worth doing regardless, just don't conflate it with backlink strategy.
 
 ## 5a. Content Architecture — Pillar + Cluster
 

@@ -7,7 +7,7 @@ Single source of truth for this blog rebuild. Refer here before asking me the sa
 **What this is**: TrendTurtles is a quantitative trading technology company (prop trading, not public advisory — see disclaimer in §2). This repo is its static HTML/CSS site (GitHub Pages, no build tools, no framework), domain `trendturtles.com`. This file governs a rebuild of `/blog/` from a fictional-dialogue "story" format into direct, factual, Ogilvy-style finance/stock-market content.
 
 **Where things stand** (update this line whenever status changes materially — treat it as the current pointer, not a historical log; full history is in §9 and in `git log`):
-> As of 2026-10-06: blog rebuilt flat, 1 cluster post published (`gold-making-charges-india-real-cost.html`), daily cluster-post cadence agreed, gold pillar post planned but not started. Site-wide link/heading audit done. Root-page SEO buildout is also now done (meta/canonical/OG/Twitter/JSON-LD on all 6 pages, favicon, sitemap.xml, robots.txt, 404.html, .nojekyll, branded og:image on every page) — see §8. Content/copy on root pages is still off-limits by default (§1); only the technical/SEO layer was touched.
+> As of 2026-10-06: blog rebuilt flat, 1 cluster post published (`gold-making-charges-india-real-cost.html`), cadence is 2-3 posts/week (§4a), gold theme's pillar post is next (not started yet — theme-depth rule in §4a says pillar before more gold clusters). Site-wide link/heading audit done. Root-page SEO buildout is also now done (meta/canonical/OG/Twitter/JSON-LD on all 6 pages, favicon, sitemap.xml, robots.txt, 404.html, .nojekyll, branded og:image on every page, favicon uses the logo's exact navy on white) — see §8. Content/copy on root pages is still off-limits by default (§1); only the technical/SEO layer was touched.
 
 **File map**:
 - `blog/CONSTITUTION.md` (this file) — all rules: scope, voice, SEO checklist, colour palette, pipeline, cadence, log of every post and every decision.
@@ -103,11 +103,17 @@ Merged from two reference methods (evergreen-book-topic method + local-SEO Claud
 
 ## 4a. Publishing Cadence
 
-**Daily**, cluster posts — decided 2026-10-06, against the recommendation (3x/week) given the quality risk below. User's call, noted so the tradeoff is explicit, not forgotten.
+**2-3 posts/week** — revised 2026-10-06 (was daily, changed same week once the quality-risk tradeoff below was made explicit). Mostly cluster posts; pillar posts are occasional, scheduled by theme-depth, not by calendar day.
 
-- **The risk accepted**: daily output only works if every post still gets genuine research, gap-analysis, and an Ogilvy-quality editing pass (the gold post took 4 revision rounds to get right). Rushing to hit a daily quota on finance/YMYL content, if quality slips, reads as a content-farm pattern to Google and to readers — worse than publishing less often. Daily is fine as a target; it is not an excuse to skip §5 pipeline steps.
-- **If a day's research doesn't turn up a genuinely specific, real, searched problem** (§5 step 2) — don't force a generic post out to hit the quota. Skip that day, or write a pillar post, or extend the cluster topic list, rather than lower the bar.
-- Pillar posts are occasional, not part of the daily cadence — written when a new theme starts (see §5a).
+- **The risk noted when daily was tried**: output only works if every post still gets genuine research, gap-analysis, and an Ogilvy-quality editing pass (the gold post took 4 revision rounds to get right). Rushing to hit a quota on finance/YMYL content, if quality slips, reads as a content-farm pattern to Google and to readers — worse than publishing less often. This still applies at 2-3/week: it's a target, not an excuse to skip §5 pipeline steps.
+- **If research doesn't turn up a genuinely specific, real, searched problem** (§5 step 2) for a planned post — don't force a generic one out to hit the count. Skip it, pull forward a pillar post, or extend the topic list, rather than lower the bar.
+
+**Theme-depth rule — when to write a pillar vs. a cluster:**
+- Cluster is the default. Most weeks, every post is a cluster post.
+- Write a **pillar** only when starting a theme that doesn't have one yet — ideally as the 1st or 2nd post of that theme, so later cluster posts have something to link up to (not written retroactively after the theme is already deep).
+- A theme counts as having reasonable depth once it has **1 pillar + at least 3-4 cluster posts**. Don't start a new theme before the current one reaches that depth — a half-filled theme (1-2 posts, then abandoned for a new topic) builds weak topical authority; a handful of themes each taken to real depth builds strong authority. This is standard topic-cluster SEO practice, not a TrendTurtles-specific preference.
+- Once a theme hits that depth, decide per real signal: keep adding clusters if gap-analysis keeps surfacing genuine new problems in it, or start the next theme's pillar if it's thinning out.
+- Rough shape at 2-3/week: a theme (pillar + ~4 clusters) takes about 2 weeks to reach depth, then the next theme starts. **Gold theme status**: 1 cluster live (making charges), pillar still not started — pillar should be next, per this rule, before adding more gold clusters.
 - Two standing prompts the user can send to trigger a post (kept here so they survive even if the chat history doesn't):
   - **Cluster/regular**: "Naya cluster blog post likho aur publish karo. Topic: `[topic or blank]`. `blog/CONSTITUTION.md` aur `blog/POST_TEMPLATE.md` follow karo — specific real searched problem dhundo, audience segments naam lo, Ogilvy-style simple English, solution + comparison section, black+blue colors, full SEO. `blog/index.html` mein add karo, §9 log update karo, commit+push karo."
   - **Pillar/evergreen**: "Naya pillar blog post likho aur publish karo. Theme: `[broad topic]`. §5a follow karo — broad, checklist-style, evergreen, existing cluster posts ko link karo. Pehle outline do review ke liye, phir publish karo."

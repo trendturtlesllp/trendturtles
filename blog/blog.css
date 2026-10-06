@@ -20,6 +20,14 @@
     color: var(--ink);
 }
 
+/* A heading that opens a .section shouldn't carry the big top
+   margin/border meant for mid-page section breaks */
+.section > h2:first-child {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 0;
+}
+
 .section strong,
 .section p strong {
     color: var(--ink);

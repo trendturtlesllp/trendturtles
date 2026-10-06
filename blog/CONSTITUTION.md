@@ -2,6 +2,24 @@
 
 Single source of truth for this blog rebuild. Refer here before asking me the same question twice.
 
+## 0. Start Here (read this first — for a fresh session with no prior memory)
+
+**What this is**: TrendTurtles is a quantitative trading technology company (prop trading, not public advisory — see disclaimer in §2). This repo is its static HTML/CSS site (GitHub Pages, no build tools, no framework), domain `trendturtles.com`. This file governs a rebuild of `/blog/` from a fictional-dialogue "story" format into direct, factual, Ogilvy-style finance/stock-market content.
+
+**Where things stand** (update this line whenever status changes materially — treat it as the current pointer, not a historical log; full history is in §9 and in `git log`):
+> As of 2026-10-06: blog rebuilt flat, 1 cluster post published (`gold-making-charges-india-real-cost.html`), daily cluster-post cadence agreed, gold pillar post planned but not started, site-wide link/heading audit done, root-page SEO buildout (meta/canonical/OG/schema/sitemap/robots) still deferred.
+
+**File map**:
+- `blog/CONSTITUTION.md` (this file) — all rules: scope, voice, SEO checklist, colour palette, pipeline, cadence, log of every post and every decision.
+- `blog/POST_TEMPLATE.md` — the literal copy-paste HTML skeleton + checklist for a new post. Markdown, never served as a real page.
+- `blog/blog.css` — blog-only CSS (loaded after root `../style.css`, overrides a few of its colour choices on blog pages only — see §6a).
+- `blog/*.html` (flat, no subfolders) — the actual published posts, plus `blog/index.html` as the hub.
+- Root (`index.html`, `about.html`, `contact.html`, `products-services.html`, `style.css`) — the rest of the site. Mostly out of scope (§1) — edit only on an explicit, specific instruction, and log the exception in §8.
+
+**To continue the work cold**: use the two standing prompts in §4a (one for a regular/cluster post, one for a pillar post). Everything those prompts need to behave correctly — voice, pipeline, SEO checklist, colour rules — is in this file; they don't depend on chat history.
+
+**Git discipline**: every meaningful change in this project should be committed and pushed to `origin main` before the session ends — this file and the published posts are the entire recoverable state if the local machine is lost. If you're picking this up fresh: run `git log --oneline -15` and `git status` first to see exactly what's already live vs. locally uncommitted.
+
 ## 1. Scope (current)
 
 - Work is confined to `/blog/` only. Root site pages (`index.html`, `about.html`, `contact.html`, `products-services.html`) and root infra (`sitemap.xml`, `robots.txt`, `404.html`, favicon, homepage schema) are **out of scope for now** — deferred, not cancelled.
@@ -135,6 +153,14 @@ Only when a real chart/data visual adds genuine value — not a standard element
 Revisit these once the blog-folder rebuild is approved and running.
 
 **One-off exception, 2026-10-06**: `contact.html` email updated to `trendturtlesllp@gmail.com` on explicit direct instruction. Not a scope change — the blog-folder-only boundary still holds; this was a single, specifically-named edit, not a reopening of root-page work in general.
+
+**Site-wide link/technical audit, 2026-10-06**: user asked to check the whole site (not just `/blog/`) for broken links and technical errors. Fixed, as small targeted bug-fixes (not a reopening of the full root-SEO buildout below):
+- `blog/index.html`: added a missing `<h2>Latest Articles</h2>` — page previously jumped `<h1>` straight to `<h3>` (the blog-card title), skipping a heading level.
+- 4 root pages (`index.html`, `about.html`, `contact.html`, `products-services.html`): normalized the nav's Blog link from an absolute `/blog/index.html` to a relative `blog/index.html`, matching every other nav link's style.
+- `products-services.html`: `<title>` was missing the `" - TrendTurtles"` suffix that every other page uses.
+- Deleted 8 orphaned images + `dummy.txt` from `assets/images/` — leftover from the deleted Neo & Teo posts, referenced by nothing. (`indexhero.jpg` at root was left alone — it's intentionally commented out in `index.html`, not orphaned by accident.)
+
+**Still deferred, confirmed still deferred after this audit**: the 4 root pages still have no meta description, canonical, Open Graph/Twitter tags, or JSON-LD at all (both blog pages have full coverage). This is a real gap, not a false positive — but it's a buildout (plus `sitemap.xml`, `robots.txt`, favicon, homepage `Organization`/`WebSite` schema — the original full-site plan), not a bug fix, so it wasn't done in this pass without separately confirming.
 
 ## 9. Published / Drafted Posts Log
 

@@ -227,7 +227,9 @@ Revisit the remaining item (old-URL redirect stubs) if it ever turns out those d
 - `blog/index.html`: added a missing `<h2>Latest Articles</h2>` — page previously jumped `<h1>` straight to `<h3>` (the blog-card title), skipping a heading level.
 - 4 root pages (`index.html`, `about.html`, `contact.html`, `products-services.html`): normalized the nav's Blog link from an absolute `/blog/index.html` to a relative `blog/index.html`, matching every other nav link's style.
 - `products-services.html`: `<title>` was missing the `" - TrendTurtles"` suffix that every other page uses.
-- Deleted 8 orphaned images + `dummy.txt` from `assets/images/` — leftover from the deleted Neo & Teo posts, referenced by nothing. (`indexhero.jpg` at root was left alone — it's intentionally commented out in `index.html`, not orphaned by accident.)
+- Deleted 8 orphaned images + `dummy.txt` from `assets/images/` — leftover from the deleted Neo & Teo posts, referenced by nothing. (`indexhero.jpg` at root was left alone at the time — it was intentionally commented out in `index.html`, not orphaned by accident — but later removed anyway, see the 2026-10-06 cleanup entry below.)
+
+**Repo cleanup, 2026-10-06**: removed `README.md` (stale pre-rebuild changelog — `blog/CONSTITUTION.md` is the one file with current, git-tracked project state; no second file to keep in sync) and `indexhero.jpg` (never actually rendered — only existed inside an HTML comment in `index.html`, which was also cleaned up).
 
 **Still deferred, confirmed still deferred after this audit**: the 4 root pages still have no meta description, canonical, Open Graph/Twitter tags, or JSON-LD at all (both blog pages have full coverage). This is a real gap, not a false positive — but it's a buildout (plus `sitemap.xml`, `robots.txt`, favicon, homepage `Organization`/`WebSite` schema — the original full-site plan), not a bug fix, so it wasn't done in this pass without separately confirming.
 

@@ -10,9 +10,11 @@ The blog solves problems people are actually facing in finance, in detail, for t
 
 1. **The topic** (gold, for example) is agreed with the author in conversation.
 2. **Collect everything real about that topic** from the internet: every problem people report, every opportunity they miss, with its source. This goes into the topic's research file before any post is planned.
-3. **Group entries that share a cause.** Each group is a pillar. A pillar is a label for a group, such as "buyers lack the knowledge to check", not an article.
-4. **Write one post per specific problem** in a pillar, and link the posts in a pillar to each other.
+3. **Find the pillars in the data.** For each problem ask why it happened to that person. The two or three human reasons that explain most of the list are the pillars, such as "the buyer does not know". They come out of the sorting; nobody, the author included, names them first.
+4. **Write top-down.** Each pillar gets one main article on the human problem itself. Then each specific problem or fix inside it gets its own cluster article, which zooms in and follows the same shape. Finish one pillar before the next.
 5. **Move to the next topic** when the topic's list has been covered.
+
+So the pyramid is built from the bottom up (problems, then pillars) and written from the top down (pillar article, then its clusters).
 
 We never pick a topic, a pillar or an angle by thinking one up. It comes from the list.
 
@@ -32,9 +34,11 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 
 - **Current topic:** gold.
 - **Live posts (2):** `gold-hallmark-check-india` and `gold-making-charges-india-real-cost`. They link to each other.
-- **Research file:** `blog/GOLD_RESEARCH.md`, first pass done 2026-10-08, about 60 entries in 5 proposed pillars. **The author has not yet confirmed the pillars.** Get that confirmation, and the author's choice of problem, before planning the next post.
-- **Next up:** the problem the author picks from the research file.
-- **After that:** reorder the hallmark post into the four-part shape (§4). No new research needed.
+- **Research file:** `blog/GOLD_RESEARCH.md`, first pass done 2026-10-08, about 60 entries. Sorting them gave three pillars: (1) the buyer does not know, (2) the buyer trusts the other side without proof, (3) the buyer pays first for a promise. **The author has not yet confirmed these.**
+- **Pillar 1 so far:** main article `gold-hallmark-check-india`, cluster `gold-making-charges-india-real-cost`.
+- **Next up:** the author confirms the pillars and picks what to write next from the research file.
+- **Still to research:** the human impact of these problems (families, weddings, debts), which the main articles need. Not searched yet.
+- **After that:** reorder the hallmark article into the four-part shape (§4) and deepen its standard and impact parts.
 - **Open item:** the making-charges post was published before the Publish Gate existed and has never been through it. Known gaps: meta description is 166 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS. It also needs reordering into the four-part shape. Give it its own gate pass as a separate job. Adding a Related Reading link to it does not count as that job.
 
 ## 1. What this is
@@ -160,16 +164,18 @@ Opportunities (a right the buyer has, a cheaper route, a free check) are not sep
 
 **Pillars**
 
-- A pillar is a group of rows that share a cause. Name it by the cause, in plain words.
-- Pillars come from grouping the rows. Never write the pillar names first and sort rows into them.
-- A pillar is not an article. Every article covers one specific problem.
-- An opportunity row attaches to the problem post it helps with.
+- A pillar is a human reason that many rows share: why this keeps happening to people. Name it in plain words from the buyer's side ("the buyer does not know").
+- Expect two or three pillars per topic. They come from sorting the rows. Never write pillar names first and fit rows to them, whoever suggests the names.
+- File each row under its main reason. A pillar the data does not support is not a pillar; note it in the research file as unsupported and say what research would test it.
+- An opportunity row attaches to the problem it helps with.
 
-**Posts**
+**Articles**
 
-- One post per specific problem, in depth, with real dated numbers. Refresh the numbers when they drift and update `dateModified`.
-- Posts in the same pillar link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
-- Stay on a topic until its problems are covered. Then agree the next topic with the author.
+- **Main article, one per pillar.** It opens the human problem with a hard fact, shows what the standard or the regulator says, gives real cases, shows the impact on people's lives, and ends with what to do. It links to every cluster article under it.
+- **Cluster articles.** One for each specific problem or fix inside the pillar (how to check a hallmark, what making charges cost). Same four-part shape, zoomed in, with real dated numbers. Refresh the numbers when they drift and update `dateModified`.
+- The impact part uses only what a source reports. If cases of broken marriages, homes sold or deaths are found, they are written with their source and with care, never for effect. If they are not found, they are not written.
+- Articles in the same pillar link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
+- Write a pillar's main article first, then its clusters. Stay on a topic until its pillars are covered, then agree the next topic with the author.
 
 ## 7. Page and SEO rules
 

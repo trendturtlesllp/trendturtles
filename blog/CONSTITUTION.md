@@ -2,6 +2,8 @@
 
 Single source of truth for this blog rebuild. Refer here before asking me the same question twice.
 
+**The one rule every other rule here builds on**: a pillar is a TYPE of problem (a specific "who do I need to trust, and how do I verify it" question), not a broad topic area. One topic area (gold, mutual funds, whatever's next) can genuinely need several pillars — never assume it's one. Full explanation and a worked example in §5a. Start any new topic-area research from this.
+
 ## Copy-Paste Prompts
 
 Paste one of these into any chat — a brand new one with no prior memory included — and nothing else should need to be said. Each is self-sufficient: it points at this file and `blog/POST_TEMPLATE.md`, which hold every rule, so the prompts themselves stay short instead of duplicating the rulebook (and never go stale when the rulebook changes).
@@ -12,7 +14,7 @@ Paste one of these into any chat — a brand new one with no prior memory includ
 > Then write and publish one new cluster post. Topic: `[give a topic, or leave blank and find one yourself]`.
 >
 > Do this in order, without asking me anything unless you're genuinely blocked (can't find a real specific problem, can't verify a core fact):
-> 1. Check §5a's theme-depth rule first. If the current theme needs a pillar post before another cluster, tell me that instead of writing a cluster anyway.
+> 1. Check §5a's theme-depth rule and topic-area status note first. A cluster belongs under a specific pillar (one problem-type, §5a) — if that pillar doesn't exist yet for this topic, tell me that instead of writing a cluster anyway.
 > 2. Run the full §5 pipeline end to end: evergreen validation, find the actual specific real searched problem (not a generic topic) via web research, gap-analysis against what's already ranking, name the real-world audience segments (§3a), keyword-mapped outline, Ogilvy-voice draft (§3), light/simple English, mandatory solution section + comparison table, black+blue palette only (§6a), full SEO including JSON-LD (§6), generate its share-card image via `blog/generate-share-image.ps1` with an ABSOLUTE `-OutputPath` (known gotcha, §8).
 > 3. Add it to `blog/index.html`'s listing, update the §9 log, commit and push.
 > 4. Generate the social copy per §4b: one LinkedIn main post, one X thread (4-5 tweets), and 2-3 standalone punch posts for each platform.
@@ -20,17 +22,16 @@ Paste one of these into any chat — a brand new one with no prior memory includ
 > End your final message with the complete, ready-to-copy-paste text for the LinkedIn main post, the numbered X thread, and all punch posts for both platforms — clearly labeled, including which day of the week each punch is meant for per §4b.
 
 **New pillar (evergreen) post:**
-> You're working on the TrendTurtles blog at this repo. You have no memory of any prior conversation. First, read `blog/CONSTITUTION.md` in full and `blog/POST_TEMPLATE.md` in full — they are the complete current rulebook.
+> You're working on the TrendTurtles blog at this repo. You have no memory of any prior conversation. First, read `blog/CONSTITUTION.md` in full and `blog/POST_TEMPLATE.md` in full — they are the complete current rulebook. Pay particular attention to §5a: **a pillar is a TYPE of problem, not a broad topic area** — a topic can need several pillars, never assume one.
 >
-> Write and publish one new pillar post. Theme: `[broad topic]`.
+> Topic area: `[e.g. gold, mutual funds — not the pillar's exact subject yet]`.
 >
-> Do this in order:
-> 1. Check §9's log for which cluster posts already exist under this theme, to link down to.
-> 2. Follow §5a: broad, checklist/principle-style, evergreen — not built around a number that will go stale (§5b) — names real-world audience segments (§3a), links to every existing cluster post under this theme.
-> 3. Research real, common checklist items/mistakes for this theme via web search, same rigor as §5 step 2 (real, not generic).
-> 4. Draft an outline and show it to me before writing the full post — this is the one checkpoint pillar posts keep, since they're more structural. Everything else, proceed without asking.
-> 5. Once I approve the outline: full SEO, black+blue palette, share-image, add to `blog/index.html`, update §9, commit+push.
-> 6. Generate social copy per §4b, same as a cluster post.
+> Do this in order, without asking me anything unless genuinely blocked:
+> 1. Check §5a's topic-area status note and §9's log — has problem-mapping research already been done for this topic area, with problem-types already identified? If yes, tell me the mapped problem-types and which one is next, and confirm with me before drafting. If no, do the mapping now: research broadly across the topic area (same rigor as §5 step 2 — real complaints, real cases, not generic advice) to surface several distinct, specific problems, then group them by problem-TYPE (different "who do you need to trust/verify," different core risk) — each type is a separate future pillar. Show me the map and which pillar you'd start with before going further.
+> 2. Once a specific pillar (one problem-type) is confirmed: synthesize its real problem statement from the mapped sub-problems (§5a's bottom-up rule — never invent a checklist topic). Name the real-world audience segments it actually serves (§3a, including the search-intent test before adding any trader/institutional angle). Identify which existing clusters belong under it and link down to them.
+> 3. Draft an Ogilvy-style headline/problem statement and outline, show it to me before writing the full post — the one checkpoint pillar posts keep. Everything else, proceed without asking.
+> 4. Once I approve: full draft (light/simple English, §3a), full SEO including JSON-LD (§6), black+blue palette (§6a), share-image via `blog/generate-share-image.ps1` with an ABSOLUTE `-OutputPath` (§8's known gotcha), add to `blog/index.html`, update §9 and §5a's topic-area status note, commit+push.
+> 5. Generate social copy per §4b, same as a cluster post.
 >
 > End your final message with the outline for my review first; once approved and published, follow up with the ready-to-copy-paste LinkedIn/X/punch content.
 

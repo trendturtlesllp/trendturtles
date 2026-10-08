@@ -212,7 +212,9 @@ A single deep-dive post only ranks for the specific query it targets. Someone ea
 
 The top-down draft `gold-buying-checklist-india.html` and its share image were deleted 2026-10-08 (never published, never committed).
 
-**Slug rename, 2026-10-08:** the pillar was first published as `is-your-jeweller-trustworthy-india`, then renamed the same day to `gold-hallmark-check-india` once the rewrite showed its subject is buyers not knowing how to check a hallmark. Slugs are otherwise permanent (§6); this was done within hours of first publish, on the author's instruction, and a redirect stub (meta refresh, canonical to the new URL, `noindex`) sits at the old path so any link already shared still works. Do not delete that stub.
+**Slug rename, 2026-10-08:** the pillar was first published as `is-your-jeweller-trustworthy-india`, then renamed the same day to `gold-hallmark-check-india` once the rewrite showed its subject is buyers not knowing how to check a hallmark. Slugs are otherwise permanent (§6); this was done within hours of first publish, on the author's instruction. A redirect stub was left at the old path at first, then deleted the same day, also on the author's instruction, so the old URL now shows the site's `404.html`.
+
+**No in-article image on this post, 2026-10-08:** a search of BIS's site, PIB releases, Wikimedia Commons and Openverse found no freely usable photo of the current three-mark hallmark (BIS's own ring image shows the pre-2021 style). The author chose to publish without an image. BIS's copyright policy does allow reuse of its site material with acknowledgement, if an image is wanted later.
 
 ## 5b. Specificity vs. Evergreen — Different Jobs for Different Posts
 

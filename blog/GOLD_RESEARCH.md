@@ -11,7 +11,7 @@ Every real problem and missed opportunity found for the topic "gold", with its s
 
 **How the pillars were made**
 
-For each problem row the question was: why did this happen to this person? Three human reasons account for almost every row. They were not chosen first; they are what was left after sorting. Each row is filed under its main reason. A pillar gets one main article, then a cluster article for each specific problem or fix inside it.
+For each problem row the question was: why did this happen to this person? Three human reasons account for almost every row. They were not chosen first; they are what was left after sorting. The author accepted them on 2026-10-08. Each row is filed under its main reason. Each pillar is written as a series: one main article, then an episode for each specific problem or fix inside it, in the order listed. Series 1 is in progress; finish it before starting series 2.
 
 | Pillar | The human problem | Problem rows |
 |---|---|---|
@@ -58,7 +58,7 @@ What to check, what they are really paying, which rules apply, and which rights 
 | If hallmarked gold is less pure than its mark, the buyer is owed twice the difference plus testing charges | Anyone sold under-purity hallmarked gold | [BIS](https://www.bis.gov.in/hallmarking-overview/consumer-protection/?lang=en), undated | `gold-hallmark-check-india` |
 | Anyone can have jewellery tested at a BIS-recognised centre for ₹200 (reported as covering up to 4 articles) | Owners of old, unhallmarked or doubtful gold | [BIS FAQ](https://www.bis.gov.in/hallmarking-overview/hallmarking-faqs/hallmarking-faq), undated; [PIB reprint](https://www.taxheal.com/testing-of-un-hallmarked-gold-jewellery-at-nominal-price-for-consumers-enabled.html), 11 Mar 2022 | |
 | Hallmarked jewellery bought before the six-character code remains valid in the owner's hands | Owners of older hallmarked jewellery | [Moneylife](https://moneylife.in/article/sale-of-hallmarked-jewellery-without-sixdigit-unique-id-number-prohibited-after-31st-march-govt/70050.html), 6 Mar 2023 | |
-| The hallmarking charge is small and the bill must show it, with net weight, carat and fineness | All jewellery buyers | [BIS FAQ](https://www.bis.gov.in/hallmarking-overview/hallmarking-faqs/hallmarking-faq), undated. The FAQ says ₹35 a piece; a Sept 2026 news report says it rose to ₹75. Resolve before use | |
+| The hallmarking charge is small and the bill must show it, with net weight, carat and fineness | All jewellery buyers | [BIS FAQ](https://www.bis.gov.in/hallmarking-overview/hallmarking-faqs/hallmarking-faq), undated. The BIS FAQ says ₹35 a piece; the live making-charges post, citing a Sept 2026 news report, says it rose from ₹45 to ₹75. Resolve before using either figure again | |
 | The usual refining or melting charge on exchange is 1 to 3% of value | People exchanging old jewellery | [IIFL Finance](https://www.iifl.com/blogs/gold-loan/gold-jewellery-exchange-offer-at-jewellers), updated 17 Aug 2026. A lender's blog; needs an independent source | Mentioned in `gold-hallmark-check-india` |
 | NBFC gold loans cost roughly double bank gold loans (banks 9–17%, NBFCs 20–26%) | Anyone choosing a lender | [Business Today](https://www.businesstoday.in/magazine/cover-story/story/unveiling-the-shadowy-side-of-surging-gold-loans-will-the-rbi-move-to-protect-customers-435602-2024-07-12), 12 Jul 2024 | |
 | Small borrowers can borrow a larger share of the gold's value: 85% up to ₹2.5 lakh, 80% to ₹5 lakh, 75% above | Borrowers under ₹5 lakh | [Onmanorama](https://www.onmanorama.com/news/business/2025/06/07/gold-loan-to-value-rules-eased-rbi-small-borrowers.amp.html), 7 Jun 2025 | |
@@ -70,15 +70,17 @@ What to check, what they are really paying, which rules apply, and which rights 
 | People returning after more than a year abroad get a duty-free jewellery allowance by weight: 40 g for women, 20 g for others | NRIs and returning residents | [A2Z Taxcorp](https://a2ztaxcorp.net/government-notifies-simplified-baggage-rules-2026-introducing-modernized-customs-procedures-and-enhanced-passenger-allowances/), 4 Feb 2026 | |
 | Separate locker insurance exists and needs no bills to buy, but a claim needs proof and an FIR | Locker holders | [Outlook Money](https://www.outlookmoney.com/amp/story/personal-finance/bank-locker-insurance-why-your-valuables-may-not-be-fully-protected-by-banks), date not captured | |
 
-### Cluster articles this pillar points to
+### Episodes of this series, in writing order
 
-- Making charges: **done** (`gold-making-charges-india-real-cost`).
-- How to check a hallmark, step by step (now inside the main article; could become its own).
-- When gold legally has no hallmark, and the ₹200 test.
-- What digital gold, gold ETFs and bank coins really cost.
-- Gold bonds: what changed in April 2026 and what holders should do.
-- Family gold: how much a household may hold, and tax when selling inherited gold.
-- Carrying gold through customs.
+1. Making charges. **Live** (`gold-making-charges-india-real-cost`); still needs its Publish Gate pass.
+2. When gold legally has no hallmark, and the ₹200 test.
+3. What digital gold, gold ETFs and bank coins really cost.
+4. Gold bonds: what changed in April 2026 and what holders should do.
+5. Family gold: how much a household may hold, and tax when selling inherited gold.
+6. Carrying gold through customs.
+7. How to check a hallmark, step by step. Now inside the main article; decide when the main article is reworked whether it becomes its own episode.
+
+The main article is reworked before episode 2 is written (see "Where things stand" in the constitution). Each episode uses the problem and opportunity rows above that match its subject. Rows filed here that are used by another series' episodes: the Badlapur row goes in the main article; the loan-rate and loan-to-value rows go in series 2's gold-loan episode; the two locker rows go in series 2's locker episode; the PAN row goes in episode 5.
 
 ---
 
@@ -122,15 +124,17 @@ They take the seller's or the bank's word. Nothing is in writing, they are not p
 | When pledged gold is stolen inside the bank, the bank must return equal weight or pay current value | Borrowers whose gold is lost | [The Lawsuits](https://thelawsuits.in/bank-responsible-securing-pledged-gold-ernakulam-district-commission/), 3 Sep 2024 | |
 | An auction notice sent to the wrong address made the sale illegal; the borrower was awarded today's value of the gold | Borrowers auctioned without proper notice | [Moneylife](https://moneylife.in/article/hdfc-bank-asked-to-pay-as-on-today-value-of-8-sovereign-gold-pledged-by-a-borrower/71609.html), 26 Jul 2023 | |
 
-### Cluster articles this pillar points to
+### Episodes of this series, in writing order
 
-- Forged hallmarks: how they are caught and how to catch one.
-- Get it in writing: the bill, the buyback terms, the booked rate.
-- Exchanging old gold without losing weight or rate.
-- Gold loans: your rights at valuation, at auction and at closure.
-- Pledged gold swapped or lost: what the bank owes you.
-- Bank lockers: keep proof of what is inside.
-- Buying gold online.
+The main article comes first. Then:
+
+1. Forged hallmarks: how they are caught and how to catch one.
+2. Get it in writing: the bill, the buyback terms, the booked rate.
+3. Exchanging old gold without losing weight or rate.
+4. Gold loans: your rights at valuation, at auction and at closure.
+5. Pledged gold swapped or lost: what the bank owes you.
+6. Bank lockers: keep proof of what is inside.
+7. Buying gold online.
 
 ---
 
@@ -159,11 +163,13 @@ Money is handed over months ahead, drawn by a promised gain, to a seller or app 
 |---|---|---|---|
 | Jewellers keep savings schemes within 11 to 12 months because of company deposit rules, so a longer scheme is a warning sign | Anyone joining a scheme | [LiveLaw](https://www.livelaw.in/articles/law-relating-to-jewellery-brands-gold-savings-schemes-279580), 28 Dec 2024 | Mentioned in `gold-hallmark-check-india` |
 
-### Cluster articles this pillar points to
+### Episodes of this series, in writing order
 
-- Jewellers' gold savings schemes: how they fail and how to test one.
-- Digital gold apps: who protects your money.
-- Gold "investment companies" promising returns.
+The main article comes first. Then:
+
+1. Jewellers' gold savings schemes: how they fail and how to test one.
+2. Digital gold apps: who protects your money.
+3. Gold "investment companies" promising returns.
 
 This pillar is thin on fixes: only one opportunity row. It needs more research on what a saver can check and what the law gives them before its main article is written.
 

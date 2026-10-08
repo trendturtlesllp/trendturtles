@@ -11,10 +11,10 @@ The blog solves problems people are actually facing in finance, in detail, for t
 1. **The topic** (gold, for example) is agreed with the author in conversation.
 2. **Collect everything real about that topic** from the internet: every problem people report, every opportunity they miss, with its source. This goes into the topic's research file before any post is planned.
 3. **Find the pillars in the data.** For each problem ask why it happened to that person. The two or three human reasons that explain most of the list are the pillars, such as "the buyer does not know". They come out of the sorting; nobody, the author included, names them first.
-4. **Write top-down.** Each pillar gets one main article on the human problem itself. Then each specific problem or fix inside it gets its own cluster article, which zooms in and follows the same shape. Finish one pillar before the next.
-5. **Move to the next topic** when the topic's list has been covered.
+4. **Write each pillar as a series.** The main article opens it, on the human problem itself. Then every specific problem or fix inside it gets its own article, an episode, which zooms in and follows the same shape. Every episode holds tightly to the pillar's theme and shows it from a new angle. Each one informs, gives a solution, and is interesting to read.
+5. **Finish one pillar's series before starting the next.** Move to the next topic when all the topic's pillars are done.
 
-So the pyramid is built from the bottom up (problems, then pillars) and written from the top down (pillar article, then its clusters).
+So the pyramid is built from the bottom up (problems, then pillars) and written from the top down (main article, then its episodes).
 
 We never pick a topic, a pillar or an angle by thinking one up. It comes from the list.
 
@@ -24,7 +24,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 
 > You're working on the TrendTurtles blog in this repo. You have no memory of earlier conversations; everything you need is in the repo. Read `blog/CONSTITUTION.md` and `blog/POST_TEMPLATE.md` in full, then the current topic's research file, then run `git log --oneline -10` and `git status`.
 >
-> Write and publish the next post. Problem: `[leave blank to follow "Next up", or name one from the research file]`.
+> Write and publish the next article in the current series. Which one: `[leave blank to follow "Next up", or name an episode from the research file]`.
 >
 > Follow §2 step by step. Stop once, at step 5, and show me everything that step lists. After I approve, finish everything without asking again unless you are genuinely blocked. End with the filled Publish Gate and the social posts.
 
@@ -33,13 +33,17 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 *Update this section every time something is published or decided.*
 
 - **Current topic:** gold.
-- **Live posts (2):** `gold-hallmark-check-india` and `gold-making-charges-india-real-cost`. They link to each other.
-- **Research file:** `blog/GOLD_RESEARCH.md`, first pass done 2026-10-08, about 60 entries. Sorting them gave three pillars: (1) the buyer does not know, (2) the buyer trusts the other side without proof, (3) the buyer pays first for a promise. **The author has not yet confirmed these.**
-- **Pillar 1 so far:** main article `gold-hallmark-check-india`, cluster `gold-making-charges-india-real-cost`.
-- **Next up:** the author confirms the pillars and picks what to write next from the research file.
+- **Research file:** `blog/GOLD_RESEARCH.md`, first pass done 2026-10-08, about 60 entries.
+- **Pillars** (from the data, accepted by the author on 2026-10-08), written in this order:
+  1. The buyer does not know. **Series in progress.**
+  2. The buyer trusts the other side without proof. Not started.
+  3. The buyer pays first for a promise. Not started; needs more research on fixes first.
+- **Series 1 so far:** main article `gold-hallmark-check-india` (live) and one episode, `gold-making-charges-india-real-cost` (live). The remaining episodes are listed in the research file.
+- **Next up:** rework the main article `gold-hallmark-check-india` (below), because a series opens with its main article. Then episode 2 in the research file, and so on in the listed order, unless the author names another.
+- **Before series 1 is called finished**, two live articles need rework:
+  - `gold-hallmark-check-india`: reorder into the four-part shape (§4) and deepen the parts on the standard and on the impact. As the main article it should be about the human problem; decide then whether "how to check a hallmark" becomes its own episode.
+  - `gold-making-charges-india-real-cost`: published before the Publish Gate existed and never put through it. Known gaps: meta description is over 160 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS; not in the four-part shape. Give it a full gate pass as its own job. Adding a Related Reading link to it does not count.
 - **Still to research:** the human impact of these problems (families, weddings, debts), which the main articles need. Not searched yet.
-- **After that:** reorder the hallmark article into the four-part shape (§4) and deepen its standard and impact parts.
-- **Open item:** the making-charges post was published before the Publish Gate existed and has never been through it. Known gaps: meta description is 166 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS. It also needs reordering into the four-part shape. Give it its own gate pass as a separate job. Adding a Related Reading link to it does not count as that job.
 
 ## 1. What this is
 
@@ -51,7 +55,7 @@ The blog publishes plain, factual, Ogilvy-style articles on Indian finance and m
 
 - `blog/CONSTITUTION.md`: this file.
 - `blog/POST_TEMPLATE.md`: the HTML skeleton for a new post.
-- `blog/<TOPIC>_RESEARCH.md`: one per topic. The list of every problem and opportunity found, with sources, grouped into pillars, and marked when a post covers it.
+- `blog/<TOPIC>_RESEARCH.md`: one per topic. Every problem and opportunity found, with sources, sorted into pillars, with each pillar's list of episodes and a mark on every row a post covers.
 - `blog/generate-share-image.ps1`: makes the 1200×630 share card each post needs.
 - `blog/blog.css`: blog-only styles, loaded after the root `style.css`.
 - `blog/<slug>.html`: the posts, flat, no subfolders. `blog/index.html` is the hub.
@@ -62,15 +66,15 @@ The blog publishes plain, factual, Ogilvy-style articles on Indian finance and m
 
 ## 2. How a post gets made
 
-1. **Check the research file** for the current topic. If it does not exist or is thin, build it first (§6) and show the author the pillars before going further.
-2. **Take one problem from the file.** The author names it, or "Next up" does. Then deepen it: search complaints, consumer forums, court cases, regulator notices and surveys for that specific problem. A topic ("gold investing") is not a problem. A checklist is not a problem.
-3. **State cause and effect in two lines.** Example: buyers don't know how to check a hallmark (cause), so they rely on the seller, and some sellers exploit that (effect). The article is built on the cause. Note any opportunity that belongs with this problem.
-4. **Write the fact sheet.** One line for every number, date and case the post will use: the claim, the source link, the date on the source page, who the source attributes it to. Open every source page and read it. A search-result summary is not a source.
-5. **Stop and show the author:** the problem in one sentence, cause and effect, the fact sheet, 2 to 3 headline options, the outline, the audience segments, and the slug. Wait for approval. The headline is the author's decision; when the author gives exact wording, use it exactly.
+1. **Check the research file** for the current topic. If it does not exist or is thin, build it first (§6) and show the author the pillars before going further. That is an extra stop, and it only happens when a topic is new.
+2. **Take the next episode** of the current series: the author names it, or "Next up" does. A pillar's main article comes before its episodes. Then deepen it: search complaints, consumer forums, court cases, regulator notices and surveys for that specific problem. A topic ("gold investing") is not a problem. A checklist is not a problem.
+3. **State cause and effect in two lines**, and in one more line how this article shows its pillar's theme from a new angle. Example: buyers don't know how to check a hallmark (cause), so they rely on the seller, and some sellers exploit that (effect). The article is built on the cause. Note any opportunity that belongs with this problem.
+4. **Write the fact sheet.** One line for every number, date and case the post will use: the claim, the source link, the date on the source page, who the source attributes it to. If a page carries no date, write "undated" and the date you read it. Open every source page and read it. A search-result summary is not a source.
+5. **Stop and show the author:** the problem in one sentence, cause and effect, how it fits the pillar's theme, the opportunities it will carry, the fact sheet, 2 to 3 headline options, the outline, the audience segments, and the slug. Wait for approval. The headline is the author's decision; when the author gives exact wording, use it exactly.
 6. **Write** the post from `POST_TEMPLATE.md`, in the four-part shape, following §4 and §7.
 7. **Run the Publish Gate** (§3), including the fresh reviewer. Fix what it finds.
 8. **Publish:** share image, card on `blog/index.html`, Related Reading in both directions, `sitemap.xml`, commit, push to `main`, then confirm the live URL loads. §9 says how to do each of these.
-9. **Finish:** mark the problem as posted in the research file, update "Where things stand" and §10, commit and push again, and give the author the social posts (§8).
+9. **Finish:** mark the rows and the episode as posted in the research file, update "Where things stand" and §10, commit and push again, and give the author the social posts (§8).
 
 If the research file has no real, specific problem left, say so and do not write a generic post to fill the slot.
 
@@ -78,7 +82,7 @@ If the research file has no real, specific problem left, say so and do not write
 
 Nothing is pushed until every line is answered, with the evidence. Paste the filled gate into the final message.
 
-1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape.
+1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape, and a reader can tell which pillar's theme it belongs to.
 2. The fact sheet is complete and every source page was opened. The headline number is the newest available.
 3. The headline says what the source measured, is a statement with a number, and uses simple words. `<title>` is 60 characters or fewer.
 4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short.
@@ -88,7 +92,7 @@ Nothing is pushed until every line is answered, with the evidence. Paste the fil
 8. Every factual claim is hyperlinked, and every link returns 200.
 9. The head is complete: meta description of 150 to 160 characters, canonical, OG, Twitter, share image, JSON-LD that parses, breadcrumb matching the visible one.
 10. One `<h1>`, no skipped heading levels, read time equal to body words ÷ 200.
-11. Wired in: card on the blog index, Related Reading both ways, sitemap entry with `lastmod`.
+11. Wired in: card on the blog index, Related Reading both ways, sitemap entry with `lastmod`. The post has its Key Takeaways box, the investment-advice note, and, for an episode, a link to its series' main article.
 12. A fresh agent with no context has reviewed the draft against this file and opened the sources itself. Its gaps are fixed. If the fixes changed the headline or any fact, the review was run again.
 
 A "no" is either fixed or reported to the author with the reason. Never call a post checked or verified without this. If the reviewer and the author disagree on the headline, the author decides, and the first paragraph must then give the source's exact question and numbers.
@@ -128,7 +132,10 @@ Opportunities (a right the buyer has, a cheaper route, a free check) are not sep
 - A numbered "what to do" section a reader could act on without reading the rest. This is part 4.
 - A line for each audience segment it names.
 - A "Key Takeaways" box near the end.
+- A clear tie to its series: an episode says early on how it connects to the pillar's human problem, and links to the main article.
 - The one-line "does not provide investment advice" note, linking to `contact.html`.
+
+Each article has to do three things at once: inform, give a solution, and hold the reader's interest. If one is missing, it is not ready.
 
 **Audience**
 
@@ -143,20 +150,14 @@ Opportunities (a right the buyer has, a cheaper route, a free check) are not sep
 - Compare two years only if the question and the sample were the same.
 - A number attached to a named company needs one traceable source for that exact figure. A single unverified customer complaint is not enough to name a company.
 - Survey caveats belong in the text: who was asked, how many answered, what the question was.
-- Google Trends and Amazon block automated access. If the author has a Trends chart or a review screenshot, they paste it in chat and it is used directly.
 
 ## 6. The research file, pillars and posts
 
-**The research file** (`blog/<TOPIC>_RESEARCH.md`) comes first. Build it by searching the whole topic, not one angle: buying, selling, exchanging, saving, borrowing, investing, tax, online, fraud. One row per problem or opportunity:
+**The research file** (`blog/<TOPIC>_RESEARCH.md`) comes first. Build it by searching the whole topic, not one angle: buying, selling, exchanging, saving, borrowing, investing, tax, online, fraud. `GOLD_RESEARCH.md` is the model to copy. It has one section per pillar, and in each section:
 
-| Column | What goes in it |
-|---|---|
-| Entry | The problem or opportunity in one plain sentence |
-| Kind | Problem or opportunity |
-| Who faces it | The real kind of person |
-| Source | Link, the date on the page, and whether the page was opened and read |
-| Pillar | Filled in after grouping |
-| Post | The slug once a post covers it; blank until then |
+- a table of **problems** and a table of **opportunities**, one row each, with: the entry in one plain sentence, who faces it, the source link with the date on the page, and the slug of the post that covers it (blank until then);
+- the **list of episodes** that pillar's series needs, in writing order, with what is done;
+- after the pillars: rows that fit no pillar, leads not yet sourced, and pillars that were expected but the data did not support.
 
 - A row whose source page has not been opened is a lead, and says so. It cannot be used in a post until it is opened.
 - Reddit, Quora, Amazon and Google Trends block automated access. The author can paste anything from them into chat and it goes in the file.
@@ -167,15 +168,17 @@ Opportunities (a right the buyer has, a cheaper route, a free check) are not sep
 - A pillar is a human reason that many rows share: why this keeps happening to people. Name it in plain words from the buyer's side ("the buyer does not know").
 - Expect two or three pillars per topic. They come from sorting the rows. Never write pillar names first and fit rows to them, whoever suggests the names.
 - File each row under its main reason. A pillar the data does not support is not a pillar; note it in the research file as unsupported and say what research would test it.
-- An opportunity row attaches to the problem it helps with.
+- An opportunity is used inside the article about the problem it helps with. One opportunity can serve several articles.
 
 **Articles**
 
-- **Main article, one per pillar.** It opens the human problem with a hard fact, shows what the standard or the regulator says, gives real cases, shows the impact on people's lives, and ends with what to do. It links to every cluster article under it.
-- **Cluster articles.** One for each specific problem or fix inside the pillar (how to check a hallmark, what making charges cost). Same four-part shape, zoomed in, with real dated numbers. Refresh the numbers when they drift and update `dateModified`.
-- The impact part uses only what a source reports. If cases of broken marriages, homes sold or deaths are found, they are written with their source and with care, never for effect. If they are not found, they are not written.
-- Articles in the same pillar link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
-- Write a pillar's main article first, then its clusters. Stay on a topic until its pillars are covered, then agree the next topic with the author.
+A pillar is written as a series, like a show with episodes.
+
+- **Main article, one per pillar.** It opens the series. It states the human problem with a hard fact, shows what the standard or the regulator says, gives real cases, shows the impact on people's lives, and ends with what to do. It links to every episode.
+- **Episodes (cluster articles).** One for each specific problem or fix inside the pillar (what making charges cost, how to check a hallmark). Same four-part shape, zoomed in on one thing, with real dated numbers. Each holds to the pillar's theme and shows it from a different angle; an episode that drifts from the theme belongs in another pillar or nowhere. Refresh the numbers when they drift and update `dateModified`.
+- Every article has an impact part: what the problem costs the reader in money, time, proof or trust, using the facts already sourced. Stories of broken marriages, homes sold or deaths go in only when a source reports them, written with care and never for effect. If none is found, the impact part stays with what is known.
+- Articles in the same series link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
+- Order: a pillar's main article, then its episodes, then the next pillar. A series is finished when its main article and every listed episode are live and have passed the Publish Gate. When all pillars are done, agree the next topic with the author.
 
 ## 7. Page and SEO rules
 
@@ -212,23 +215,22 @@ This is a Windows machine. Use Git Bash for `curl`, `grep` and `git`, and Window
 - **Check JSON-LD:** in PowerShell, pass each `<script type="application/ld+json">` block to `ConvertFrom-Json`. It must not throw.
 - **Count words:** strip the tags from everything inside `<section class="section">` and count. Read time is that number ÷ 200, rounded.
 - **Fresh reviewer:** start a new general-purpose agent with no context. Tell it not to edit anything, to read this file and the draft, to open every source itself, and to report what the sources do not support and which gate lines fail.
-- **Blog index card:** newest post first. Heading is the post's `<h1>`, or its `<title>` when the `<h1>` is very long. Text is the meta description.
+- **Blog index card:** newest post first. Heading is the post's `<h1>`, or its `<title>` when the `<h1>` is very long. Text is one or two sentences based on the meta description.
 - **Sitemap:** `<loc>` and `<lastmod>` only. Add the new post. Set `lastmod` to today for it, for `/blog/`, and for any post you edited.
 - **Editing a live post**, even to add a Related Reading link: set its `dateModified` to today.
 - **Commit and push** straight to `main`, with a plain one-line message saying what changed.
 - **Confirm it is live:** GitHub Pages takes up to two minutes. Request the new URL with `?v=<any number>` added until it returns 200 and shows the new `<h1>`.
 - **Old share previews:** X and LinkedIn cache them. Add `?v=2` to the link on X, or use LinkedIn's Post Inspector.
-- **Favicon:** already done. It is a serif "TT" in the logo's navy (`#002060`) on white, because `logo.png` is a wide wordmark and cannot be an icon.
-- `robots.txt` blocks crawling of this file, the template and the script. `.nojekyll` makes GitHub Pages serve files as committed. `404.html` handles any missing URL, including the hallmark post's first address (`is-your-jeweller-trustworthy-india`).
+- `robots.txt` blocks crawling of this file, the template and the script. `.nojekyll` makes GitHub Pages serve files as committed. `404.html` handles any missing URL.
 
 ## 10. Published posts
 
 Leads and ideas live in the topic's research file, not here.
 
-| Slug | Topic | Problem it addresses | Headline fact and source | Published |
+| Slug | Series and role | Problem it addresses | Headline fact and source | Published |
 |---|---|---|---|---|
-| `gold-making-charges-india-real-cost` | Gold | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
-| `gold-hallmark-check-india` | Gold | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
+| `gold-hallmark-check-india` | Gold 1, "the buyer does not know": main article | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
+| `gold-making-charges-india-real-cost` | Gold 1: episode | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
 
 Notes on the hallmark post: the author chose its headline ("82% of Gold Buyers in India Don't Know about Hallmark, "Gold Purity Standards""), so its first paragraph gives the survey's exact question and full breakdown and must keep doing so. It has no in-article image, because no freely usable photo of the current hallmark was found.
 
@@ -237,7 +239,7 @@ Notes on the hallmark post: the author chose its headline ("82% of Gold Buyers i
 Each of these cost a correction. They are here so the reason behind a rule is not forgotten.
 
 - The biggest one: topics, pillars and angles were being chosen by thinking them up. The list of real problems comes first, and everything else is taken from it.
-
+- Pillar names were thought up three times: by a tidy "who do you trust" scheme, by a first sort into five subject areas, and by the author's own five suggestions. Tested against the rows, two of the author's five had no support. Only the sort by "why did this happen to this person" held.
 - The first article was good because the author corrected it four times. Writing a rule down does not make it followed; the Publish Gate does.
 - A search summary gave a headline number that turned out to be two years old and not attributed to the regulator. Open the page.
 - A survey asked what code buyers' jewellery had. The draft headline said buyers "can't recognise a hallmark". Read the question.

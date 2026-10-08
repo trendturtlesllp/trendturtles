@@ -117,6 +117,7 @@ This file is markdown, so it is never served as a page.
         By <strong>Mayank Gola</strong>, TrendTurtles &nbsp;·&nbsp; [X] min read &nbsp;·&nbsp; Published: [Month YYYY]
     </p>
 
+    <!-- An episode says early on how it connects to its pillar's human problem, and links to the series' main article. -->
     <!-- PART 1: THE ISSUE, in detail, with its sources -->
     <p>[LEAD PARAGRAPH — the most interesting true fact first, with its source linked. If the fact comes from a survey, give the question asked, how many answered and the full breakdown.]</p>
 
@@ -162,8 +163,10 @@ This file is markdown, so it is never served as a page.
     </figure>
     -->
 
-    <!-- REQUIRED: standalone solution section — short, numbered, plain action verbs.
-         A reader should be able to skip straight here and know exactly what to do. -->
+    <!-- PART 4: HOW TO AVOID IT. REQUIRED: a standalone numbered list in plain action verbs.
+         A reader should be able to skip straight here and know exactly what to do.
+         Put the opportunities here (a right, a free check, a cheaper route).
+         After the list, add one line for each audience segment the post names. -->
     <h2>What To Do [About X]</h2>
     <p>[One line: how many steps, how long it takes]</p>
     <ol>

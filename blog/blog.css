@@ -181,6 +181,13 @@ table th:not(:first-child) {
     text-align: right;
 }
 
+/* Tables whose cells are words, not numbers */
+table.text-table td,
+table.text-table th {
+    text-align: left;
+    vertical-align: top;
+}
+
 /* Chart Figure */
 figure.chart {
     margin: 2rem 0;

@@ -32,7 +32,8 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 
 - **Current topic:** gold.
 - **Live posts (2):** `gold-hallmark-check-india` and `gold-making-charges-india-real-cost`. They link to each other.
-- **Next up:** build `blog/GOLD_RESEARCH.md` (the Approach, step 2), group it into pillars, and show the author. The next post is chosen from that file. The earlier pillar names ("trusting the seller, the lender, the platform") were thought up, not derived, and are withdrawn.
+- **Research file:** `blog/GOLD_RESEARCH.md`, first pass done 2026-10-08, about 60 entries in 5 proposed pillars. **The author has not yet confirmed the pillars.** Get that confirmation, and the author's choice of problem, before planning the next post.
+- **Next up:** the problem the author picks from the research file.
 - **After that:** reorder the hallmark post into the four-part shape (§4). No new research needed.
 - **Open item:** the making-charges post was published before the Publish Gate existed and has never been through it. Known gaps: meta description is 166 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS. It also needs reordering into the four-part shape. Give it its own gate pass as a separate job. Adding a Related Reading link to it does not count as that job.
 

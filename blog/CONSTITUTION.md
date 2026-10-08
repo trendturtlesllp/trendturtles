@@ -134,6 +134,7 @@ Merged from two reference methods (evergreen-book-topic method + local-SEO Claud
 - Outbound citations to SEBI/RBI/NSE/AMFI (or the relevant regulator/authority for the topic — e.g. BIS for hallmarking) as normal followed links (`target="_blank" rel="noopener noreferrer"`)
 - If a published post is edited later: update `dateModified` and the visible byline date
 - **Only attribute a specific number to a specific named company/entity if there's one traceable source for that exact figure.** A vague or AI-summarized claim ("Brand X charges 13-33%") is not citable unless you can point to the actual page it came from. When in doubt, use a verified case (a named, dated, sourced example) instead of a loosely-attributed statistic.
+- **Open the source page and read it before using any number, especially the headline's.** A search-result summary is not a source. Check three things on the page itself: the figure is actually there, its date, and who it is attributed to. Added 2026-10-08 after the gold pillar's headline stat turned out to be from July 2024, not attributed to any BIS document, and presented as current.
 - **No "Related Reading" section until there's actually something to link to.** Don't show a placeholder or empty links block on the first few posts — add the section once a second relevant post exists.
 
 ## 4a. Publishing Cadence

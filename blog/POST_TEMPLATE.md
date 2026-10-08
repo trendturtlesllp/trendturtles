@@ -117,13 +117,21 @@ This file is markdown, so it is never served as a page.
         By <strong>Mayank Gola</strong>, TrendTurtles &nbsp;·&nbsp; [X] min read &nbsp;·&nbsp; Published: [Month YYYY]
     </p>
 
+    <!-- PART 1: THE ISSUE, in detail, with its sources -->
     <p>[LEAD PARAGRAPH — the most interesting true fact first, with its source linked. If the fact comes from a survey, give the question asked, how many answered and the full breakdown.]</p>
 
-    <h2>[H2 — first section, in plain words]</h2>
-    <p>[Body copy. Short sentences, short paragraphs. Every factual claim hyperlinked to the source page you opened, with <code>target="_blank" rel="noopener noreferrer"</code>. Every unfamiliar term explained in the same sentence. Give each case its year.]</p>
+    <h2>[H2 — the issue, in plain words]</h2>
+    <p>[Body copy. Short sentences, short paragraphs. Every factual claim hyperlinked to the source page you opened, with <code>target="_blank" rel="noopener noreferrer"</code>. Every unfamiliar term explained where it first appears.]</p>
 
-    <h2>[H2 — next section]</h2>
+    <!-- PART 2: WHAT PEOPLE GO THROUGH — real cases, court rulings, money lost. Give each case its year. -->
+    <h2>[H2 — what goes wrong]</h2>
     <p>[...]</p>
+
+    <!-- PART 3: THE IMPACT — what it does to the buyer (for example, trust given and then broken) -->
+    <h2>[H2 — the impact]</h2>
+    <p>[...]</p>
+
+    <!-- The comparison table and PART 4 (how to avoid it) follow below. Opportunities go in part 4. -->
 
     <!-- Optional pull-quote for a single striking fact or stat -->
     <!--

@@ -2,13 +2,27 @@
 
 The one file that runs this blog: the prompt, the current status, the rules, and the lessons behind them. Older history is in `git log`.
 
+## The Approach
+
+This is the reason the blog exists. Every other rule serves it.
+
+The blog solves problems people are actually facing in finance, in detail, for the people facing them, with steps they can follow. Nobody has time to read a blog that does not solve their problem, so nothing else is published.
+
+1. **The topic** (gold, for example) is agreed with the author in conversation.
+2. **Collect everything real about that topic** from the internet: every problem people report, every opportunity they miss, with its source. This goes into the topic's research file before any post is planned.
+3. **Group entries that share a cause.** Each group is a pillar. A pillar is a label for a group, such as "buyers lack the knowledge to check", not an article.
+4. **Write one post per specific problem** in a pillar, and link the posts in a pillar to each other.
+5. **Move to the next topic** when the topic's list has been covered.
+
+We never pick a topic, a pillar or an angle by thinking one up. It comes from the list.
+
 ## The Prompt
 
 Paste this into any chat, including a brand new one with no memory. Nothing else needs to be said.
 
-> You're working on the TrendTurtles blog in this repo. You have no memory of earlier conversations; everything you need is in the repo. Read `blog/CONSTITUTION.md` and `blog/POST_TEMPLATE.md` in full, then run `git log --oneline -10` and `git status`.
+> You're working on the TrendTurtles blog in this repo. You have no memory of earlier conversations; everything you need is in the repo. Read `blog/CONSTITUTION.md` and `blog/POST_TEMPLATE.md` in full, then the current topic's research file, then run `git log --oneline -10` and `git status`.
 >
-> Write and publish the next post. Topic: `[leave blank to follow "Next up", or name one]`.
+> Write and publish the next post. Problem: `[leave blank to follow "Next up", or name one from the research file]`.
 >
 > Follow §2 step by step. Stop once, at step 5, and show me everything that step lists. After I approve, finish everything without asking again unless you are genuinely blocked. End with the filled Publish Gate and the social posts.
 
@@ -16,9 +30,11 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 
 *Update this section every time something is published or decided.*
 
-- **Live posts (2):** `gold-hallmark-check-india` (pillar) and `gold-making-charges-india-real-cost` (cluster). They link to each other.
-- **Next up:** a cluster post on gold savings-scheme failures, under the gold seller pillar (leads in §10; the main case is from 2017, so look for newer ones first). After that, old-gold exchange deductions. The pillar needs 2 to 3 more clusters before a new topic area starts.
-- **Open item:** the making-charges cluster was published before the Publish Gate existed and has never been through it. Known gaps: meta description is 166 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS. Give it its own gate pass as a separate job. Adding a Related Reading link to it does not count as that job.
+- **Current topic:** gold.
+- **Live posts (2):** `gold-hallmark-check-india` and `gold-making-charges-india-real-cost`. They link to each other.
+- **Next up:** build `blog/GOLD_RESEARCH.md` (the Approach, step 2), group it into pillars, and show the author. The next post is chosen from that file. The earlier pillar names ("trusting the seller, the lender, the platform") were thought up, not derived, and are withdrawn.
+- **After that:** reorder the hallmark post into the four-part shape (§4). No new research needed.
+- **Open item:** the making-charges post was published before the Publish Gate existed and has never been through it. Known gaps: meta description is 166 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS. It also needs reordering into the four-part shape. Give it its own gate pass as a separate job. Adding a Related Reading link to it does not count as that job.
 
 ## 1. What this is
 
@@ -30,6 +46,7 @@ The blog publishes plain, factual, Ogilvy-style articles on Indian finance and m
 
 - `blog/CONSTITUTION.md`: this file.
 - `blog/POST_TEMPLATE.md`: the HTML skeleton for a new post.
+- `blog/<TOPIC>_RESEARCH.md`: one per topic. The list of every problem and opportunity found, with sources, grouped into pillars, and marked when a post covers it.
 - `blog/generate-share-image.ps1`: makes the 1200×630 share card each post needs.
 - `blog/blog.css`: blog-only styles, loaded after the root `style.css`.
 - `blog/<slug>.html`: the posts, flat, no subfolders. `blog/index.html` is the hub.
@@ -40,23 +57,23 @@ The blog publishes plain, factual, Ogilvy-style articles on Indian finance and m
 
 ## 2. How a post gets made
 
-1. **Decide pillar or cluster.** Check "Next up" and §6. A cluster needs its pillar to exist first.
-2. **Find the real problem.** Search complaints, consumer forums, court cases, regulator notices and surveys until there is a specific problem real people have. A topic ("gold investing") is not a problem. A checklist is not a problem.
-3. **State cause and effect in two lines.** Example: buyers don't know how to check a hallmark (cause), so they rely on the seller, and some sellers exploit that (effect). The article is built on the cause.
+1. **Check the research file** for the current topic. If it does not exist or is thin, build it first (§6) and show the author the pillars before going further.
+2. **Take one problem from the file.** The author names it, or "Next up" does. Then deepen it: search complaints, consumer forums, court cases, regulator notices and surveys for that specific problem. A topic ("gold investing") is not a problem. A checklist is not a problem.
+3. **State cause and effect in two lines.** Example: buyers don't know how to check a hallmark (cause), so they rely on the seller, and some sellers exploit that (effect). The article is built on the cause. Note any opportunity that belongs with this problem.
 4. **Write the fact sheet.** One line for every number, date and case the post will use: the claim, the source link, the date on the source page, who the source attributes it to. Open every source page and read it. A search-result summary is not a source.
 5. **Stop and show the author:** the problem in one sentence, cause and effect, the fact sheet, 2 to 3 headline options, the outline, the audience segments, and the slug. Wait for approval. The headline is the author's decision; when the author gives exact wording, use it exactly.
-6. **Write** the post from `POST_TEMPLATE.md`, following §4 and §7.
+6. **Write** the post from `POST_TEMPLATE.md`, in the four-part shape, following §4 and §7.
 7. **Run the Publish Gate** (§3), including the fresh reviewer. Fix what it finds.
 8. **Publish:** share image, card on `blog/index.html`, Related Reading in both directions, `sitemap.xml`, commit, push to `main`, then confirm the live URL loads. §9 says how to do each of these.
-9. **Finish:** update "Where things stand" and §10, commit and push again, and give the author the social posts (§8).
+9. **Finish:** mark the problem as posted in the research file, update "Where things stand" and §10, commit and push again, and give the author the social posts (§8).
 
-If research finds no real, specific problem, say so and do not write a generic post to fill the slot.
+If the research file has no real, specific problem left, say so and do not write a generic post to fill the slot.
 
 ## 3. Publish Gate
 
 Nothing is pushed until every line is answered, with the evidence. Paste the filled gate into the final message.
 
-1. The problem can be stated in one sentence, with a source.
+1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape.
 2. The fact sheet is complete and every source page was opened. The headline number is the newest available.
 3. The headline says what the source measured, is a statement with a number, and uses simple words. `<title>` is 60 characters or fewer.
 4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short.
@@ -89,10 +106,21 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 - It must not claim more than the source measured. Read the survey's actual question, not the press release's summary of it.
 - A rupee figure built by adding unrelated numbers is not a fact. Use a percentage or a single sourced figure.
 
-**Every post must have**
+**The shape of every post**
 
-- A comparison table that makes the point concrete (shop A vs B vs C, buy vs exchange vs scheme).
-- A numbered "what to do" section a reader could act on without reading the rest.
+The reader should recognise their own experience and leave knowing which mistake not to make. Four parts, in this order:
+
+1. **The issue**, shown in detail with its sources.
+2. **What people go through because of it:** real cases, court rulings, money lost.
+3. **The impact:** what it does to the buyer, such as trust given and then broken.
+4. **How to avoid it:** numbered steps a reader can follow.
+
+Opportunities (a right the buyer has, a cheaper route, a free check) are not separate posts. They go inside the problem post they belong to, usually in part 4, and they supply the social punch posts (§8).
+
+**Every post must also have**
+
+- A comparison table that makes the point concrete (shop A vs B vs C, buy vs exchange vs scheme). If its numbers are illustrative, say so.
+- A numbered "what to do" section a reader could act on without reading the rest. This is part 4.
 - A line for each audience segment it names.
 - A "Key Takeaways" box near the end.
 - The one-line "does not provide investment advice" note, linking to `contact.html`.
@@ -100,7 +128,7 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 **Audience**
 
 - Name the 3 to 5 real kinds of people the topic serves before outlining: for gold, a family buying for a wedding, a gift buyer, someone saving monthly, a small investor. Not a generic "investor".
-- A trader or institutional angle goes in only if that reader would reach this article through their own searches. Otherwise save the idea as its own post (§10).
+- A trader or institutional angle goes in only if that reader would reach this article through their own searches. Otherwise add it to the research file as its own row.
 
 ## 5. Research rules
 
@@ -112,15 +140,35 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 - Survey caveats belong in the text: who was asked, how many answered, what the question was.
 - Google Trends and Amazon block automated access. If the author has a Trends chart or a review screenshot, they paste it in chat and it is used directly.
 
-## 6. Pillars and clusters
+## 6. The research file, pillars and posts
 
-- **A pillar is one type of problem**, not a topic area. A topic area can need several pillars. Gold has three: trusting the seller, trusting the lender, trusting the platform.
-- **A cluster is one specific instance** of its pillar's problem, covered in depth with real numbers.
-- **Pillars are found bottom-up.** Research the topic area widely, list the real problems, and see which larger problem they share. Never invent a broad topic and hope clusters fit under it.
-- A pillar is shorter in scope than a cluster, never thinner. It needs the same sourcing, comparison table and "what to do" section.
-- Write a pillar when a problem-type has none. Then give it 3 to 4 clusters before starting a new topic area.
-- Cluster posts keep their real, dated numbers and are refreshed when the numbers drift (update `dateModified`). Timeless guidance belongs in the pillar.
-- Every post links up to its pillar and across to its sibling posts in "Related Reading". Leave that section out only when there is nothing to link to.
+**The research file** (`blog/<TOPIC>_RESEARCH.md`) comes first. Build it by searching the whole topic, not one angle: buying, selling, exchanging, saving, borrowing, investing, tax, online, fraud. One row per problem or opportunity:
+
+| Column | What goes in it |
+|---|---|
+| Entry | The problem or opportunity in one plain sentence |
+| Kind | Problem or opportunity |
+| Who faces it | The real kind of person |
+| Source | Link, the date on the page, and whether the page was opened and read |
+| Pillar | Filled in after grouping |
+| Post | The slug once a post covers it; blank until then |
+
+- A row whose source page has not been opened is a lead, and says so. It cannot be used in a post until it is opened.
+- Reddit, Quora, Amazon and Google Trends block automated access. The author can paste anything from them into chat and it goes in the file.
+- The file keeps growing. Add rows whenever research for a post turns up something new.
+
+**Pillars**
+
+- A pillar is a group of rows that share a cause. Name it by the cause, in plain words.
+- Pillars come from grouping the rows. Never write the pillar names first and sort rows into them.
+- A pillar is not an article. Every article covers one specific problem.
+- An opportunity row attaches to the problem post it helps with.
+
+**Posts**
+
+- One post per specific problem, in depth, with real dated numbers. Refresh the numbers when they drift and update `dateModified`.
+- Posts in the same pillar link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
+- Stay on a topic until its problems are covered. Then agree the next topic with the author.
 
 ## 7. Page and SEO rules
 
@@ -138,13 +186,13 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 
 ## 8. Cadence and social posts
 
-**Cadence:** 2 to 3 posts a week, mostly clusters. It is a target, never a reason to skip a step in §2.
+**Cadence:** 2 to 3 posts a week. It is a target, never a reason to skip a step in §2.
 
 **Social posts:** there is no way to post directly, so each publish ends with ready-to-paste text.
 
 - **LinkedIn:** one main post in plain text with no link in the body. The link goes in the first comment, because LinkedIn shows link posts to fewer people.
 - **X:** one thread of 4 to 5 tweets. The link goes in the last tweet of the thread.
-- **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day.
+- **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day. The opportunities in the post make the best punches (for example, "if hallmarked gold is less pure than its stamp, you are owed twice the difference").
 - Every social post leads with a specific number or fact, the same as the article.
 - These bring readers and visibility. They are not SEO backlinks.
 
@@ -166,32 +214,22 @@ This is a Windows machine. Use Git Bash for `curl`, `grep` and `git`, and Window
 - **Favicon:** already done. It is a serif "TT" in the logo's navy (`#002060`) on white, because `logo.png` is a wide wordmark and cannot be an icon.
 - `robots.txt` blocks crawling of this file, the template and the script. `.nojekyll` makes GitHub Pages serve files as committed. `404.html` handles any missing URL, including the hallmark post's first address (`is-your-jeweller-trustworthy-india`).
 
-## 10. Posts and leads
+## 10. Published posts
 
-**Published**
+Leads and ideas live in the topic's research file, not here.
 
-| Slug | Type | Problem it addresses | Headline fact and source | Published |
+| Slug | Topic | Problem it addresses | Headline fact and source | Published |
 |---|---|---|---|---|
-| `gold-making-charges-india-real-cost` | Cluster | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
-| `gold-hallmark-check-india` | Pillar: trusting the seller | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
+| `gold-making-charges-india-real-cost` | Gold | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
+| `gold-hallmark-check-india` | Gold | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
 
 Notes on the hallmark post: the author chose its headline ("82% of Gold Buyers in India Don't Know about Hallmark, "Gold Purity Standards""), so its first paragraph gives the survey's exact question and full breakdown and must keep doing so. It has no in-article image, because no freely usable photo of the current hallmark was found.
-
-**Gold topic area: the map**
-
-1. **Trusting the seller** (buying, exchanging, savings schemes). Pillar live. Cluster leads:
-   - Savings schemes: The News Minute, Nov 2017, reported Nathella Sampathu Chetty admitting it owed ₹75 crore to over 21,000 people. LiveLaw, Dec 2024, explains why schemes stay within 11 to 12 months. Both opened and read.
-   - Old-gold exchange: IIFL Finance puts the usual refining charge at 1 to 3%. A stronger, independent source is still needed.
-2. **Trusting the lender** (gold loans). No pillar yet. Lead, not yet verified at source: RBI's 2024 findings on valuation and auction irregularities at gold-loan lenders.
-3. **Trusting the platform** (digital gold; the end of new Sovereign Gold Bond issues in 2025). No pillar yet. Leads not yet verified at source.
-
-**Other ideas**
-
-- For traders: jewellers stock up 4 to 6 weeks before Dhanteras and the wedding season, which may lead retail demand. Own post, own search intent. Not yet verified at source.
 
 ## 11. Lessons that became rules
 
 Each of these cost a correction. They are here so the reason behind a rule is not forgotten.
+
+- The biggest one: topics, pillars and angles were being chosen by thinking them up. The list of real problems comes first, and everything else is taken from it.
 
 - The first article was good because the author corrected it four times. Writing a rule down does not make it followed; the Publish Gate does.
 - A search summary gave a headline number that turned out to be two years old and not attributed to the regulator. Open the page.

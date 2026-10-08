@@ -2,10 +2,10 @@
 Generates a 1200x630 branded social-share card (og:image / twitter:image).
 Not AI art, not a cartoon -- a plain headline card: off-white background,
 a thin blue accent bar, the TrendTurtles logo, and the post's headline in
-black serif. Matches the site's black+blue palette (blog/CONSTITUTION.md §6a).
+black serif. Matches the site's black+blue palette (blog/CONSTITUTION.md, section 7).
 
-Usage:
-  pwsh ./generate-share-image.ps1 -Headline "Post title here" -OutputPath "..\assets\images\some-slug-share.png"
+Usage (Windows PowerShell; the output path must be absolute, a relative one fails with a GDI+ error):
+  .\blog\generate-share-image.ps1 -Headline "The post's h1 text" -OutputPath "E:\Clone\Blog\trendturtles\assets\images\some-slug-share.png"
 #>
 param(
     [Parameter(Mandatory=$true)][string]$Headline,
@@ -26,7 +26,7 @@ $g.TextRenderingHint = [System.Drawing.Text.TextRenderingHint]::AntiAliasGridFit
 $bgColor = [System.Drawing.ColorTranslator]::FromHtml("#f3f5f7")
 $g.Clear($bgColor)
 
-# Top accent bar (the one deliberate blue highlight, per §6a)
+# Top accent bar (the one deliberate blue accent)
 $accentColor = [System.Drawing.ColorTranslator]::FromHtml("#4c5fd5")
 $accentBrush = New-Object System.Drawing.SolidBrush($accentColor)
 $g.FillRectangle($accentBrush, 0, 0, $width, 14)

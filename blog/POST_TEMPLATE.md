@@ -1,16 +1,17 @@
 # Post Template
 
-Copy-paste starting point for a new file at `blog/<slug>.html`. Rules, voice, pipeline and SEO checklist live in [`CONSTITUTION.md`](CONSTITUTION.md) — this file is just the mechanical skeleton, not a repeat of the rules.
+The HTML skeleton for a new file at `blog/<slug>.html`. All rules live in [`CONSTITUTION.md`](CONSTITUTION.md); this file only holds the markup.
 
-Before filling this in, finish constitution §5 steps 1–3 (evergreen validation, gap analysis, keyword-mapped outline naming the 3-5 real-world reader segments for this topic). Then fill every `[BRACKETED]` placeholder below and delete anything not used (e.g. the FAQ block, or the chart figure, if this post doesn't need one).
+Use it at step 6 of the constitution's §2, after the author has approved the problem, headline, outline and slug. Fill every `[BRACKETED]` placeholder and delete any optional block you do not use.
 
-This file is markdown, not `.html` — it will never be served as a live page, so it's safe to leave in the repo as a permanent reference.
+This file is markdown, so it is never served as a page.
 
-**Before publishing, generate this post's share-card image** (fixes broken link previews on X/LinkedIn — every post needs an `og:image`, independent of whether it has a content image):
+**Share image** (every post needs one, whether or not the article has a picture). Run it from PowerShell with an absolute output path; a relative path fails with a GDI+ error:
 ```
-pwsh blog/generate-share-image.ps1 -Headline "[post <title> text]" -OutputPath "E:\Clone\Blog\trendturtles\assets\images\[SLUG]-share.png"
+.\blog\generate-share-image.ps1 -Headline "[the <h1> text]" -OutputPath "E:\Clone\Blog\trendturtles\assets\images\[SLUG]-share.png"
 ```
-Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative paths resolve against the process's current directory, not necessarily where you expect, and fail with a GDI+ error).
+
+**Read time** in the byline is the body's word count ÷ 200, rounded.
 
 ```html
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITLE — 50-60 chars, primary keyword near the front]</title>
+    <title>[TITLE — 60 chars or fewer, primary keyword near the front]</title>
     <meta name="description" content="[META DESCRIPTION — 150-160 chars, unique, states the specific fact/benefit]">
     <meta name="author" content="Mayank Gola">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -35,7 +36,8 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
     <meta name="twitter:description" content="[OG DESCRIPTION]">
     <meta name="twitter:image" content="https://trendturtles.com/assets/images/[SLUG]-share.png">
     <link rel="canonical" href="https://trendturtles.com/blog/[SLUG].html">
-    <link rel="icon" href="/favicon-512.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon-512.png" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="blog.css">
@@ -68,10 +70,19 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
         }
     }
     </script>
-    <!-- Optional: add a second ld+json script, type BreadcrumbList, mirroring the
-         visible breadcrumb below exactly (Home > Blog > [POST TITLE]) -->
-    <!-- Optional: add a third ld+json script, type FAQPage, ONLY if the FAQ
-         section below is kept and has genuine, non-manufactured Q&As -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://trendturtles.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://trendturtles.com/blog/"},
+            {"@type": "ListItem", "position": 3, "name": "[POST TITLE, SHORT — same text as the visible breadcrumb]", "item": "https://trendturtles.com/blog/[SLUG].html"}
+        ]
+    }
+    </script>
+    <!-- Optional: a third ld+json script, type FAQPage, ONLY if the FAQ
+         section below is kept and has genuine Q&As -->
 </head>
 <body>
 
@@ -97,7 +108,7 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
         <a href="index.html">Blog</a> &rsaquo;
         <span class="current">[POST TITLE, SHORT]</span>
     </p>
-    <h1>[H1 — benefit/fact-led headline with a real number or concrete claim. Not blind. Model: "At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock" — specificity over hype.]</h1>
+    <h1>[H1 — the headline the author approved, word for word. A statement with a real number.]</h1>
 </section>
 
 <section class="section">
@@ -106,10 +117,10 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
         By <strong>Mayank Gola</strong>, TrendTurtles &nbsp;·&nbsp; [X] min read &nbsp;·&nbsp; Published: [Month YYYY]
     </p>
 
-    <p>[LEAD PARAGRAPH — news-lead style. State the single most important, most interesting true fact in sentence one. No scene-setting, no throat-clearing.]</p>
+    <p>[LEAD PARAGRAPH — the most interesting true fact first, with its source linked. If the fact comes from a survey, give the question asked, how many answered and the full breakdown.]</p>
 
-    <h2>[H2 — first section, plain-language, maps to a keyword variant or the gap found in research]</h2>
-    <p>[Body copy. Short sentences, short paragraphs. Every data claim hyperlinked to a named primary source — SEBI, RBI, NSE, AMFI — <code>target="_blank" rel="noopener noreferrer"</code>. No jargon without a same-sentence plain explanation. Write for the real-world reader segments named at the outline stage, not a generic "investor."]</p>
+    <h2>[H2 — first section, in plain words]</h2>
+    <p>[Body copy. Short sentences, short paragraphs. Every factual claim hyperlinked to the source page you opened, with <code>target="_blank" rel="noopener noreferrer"</code>. Every unfamiliar term explained in the same sentence. Give each case its year.]</p>
 
     <h2>[H2 — next section]</h2>
     <p>[...]</p>
@@ -129,17 +140,17 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
     <table>
         <tr><td><strong>[Header]</strong></td><td><strong>[Header]</strong></td></tr>
         <tr><td>[Option]</td><td>[Result]</td></tr>
-        <!-- 2-3 rows. No inline styles — blog.css styles <table> generically
-             (black text, black top/bottom border, no per-cell colour). -->
+        <!-- 2-3 rows. No inline colour styles; blog.css styles <table>.
+             If the cells hold words rather than numbers, use <table class="text-table">. -->
     </table>
     </div>
     <p>[One line stating the concrete gap in rupees/numbers between options — this is the payoff of the comparison]</p>
 
-    <!-- Optional chart image — only if a table genuinely can't show it, never decorative -->
+    <!-- Optional image — only with a stated licence or policy that allows it (constitution §7) -->
     <!--
     <figure class="chart">
-        <img src="../assets/images/[descriptive-filename].png" alt="[Describes the INSIGHT shown, not keywords]" loading="lazy">
-        <figcaption>Source: [NAMED SOURCE, linked]</figcaption>
+        <img src="../assets/images/[descriptive-filename].png" alt="[Describes what the picture shows]" loading="lazy">
+        <figcaption>[What it shows]. Image: [SOURCE, linked]</figcaption>
     </figure>
     -->
 
@@ -173,6 +184,7 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
     </div>
     -->
 
+    <!-- Leave this block out only if no other post exists to link to -->
     <div class="related-reading">
         <h2>Related Reading</h2>
         <ul>
@@ -202,20 +214,6 @@ Use an absolute path for `-OutputPath` (a known PowerShell/.NET gotcha: relative
 </html>
 ```
 
-## Checklist before publishing
+## Before publishing
 
-- [ ] Headline has a specific fact/number, isn't blind, passes the "5x more people read this than the body" test
-- [ ] Lead paragraph states the core fact in sentence one
-- [ ] Sentences are short. Words are simple. Read it aloud — if a sentence needs a second breath, split it.
-- [ ] No financial jargon without a same-sentence plain explanation
-- [ ] Written for the 3-5 real-world reader segments identified at outline stage, not a generic "investor"
-- [ ] At least one comparison table that makes the point concrete (not just a single worked example)
-- [ ] A standalone, numbered "what to do" section a reader could skip straight to
-- [ ] Every data claim hyperlinked to a named primary source
-- [ ] No invented dialogue, no cartoon illustration
-- [ ] Slug is lowercase, hyphenated, keyword-first, no date baked in
-- [ ] `BreadcrumbList` JSON-LD (if added) mirrors the visible breadcrumb exactly
-- [ ] Share-card image generated (`generate-share-image.ps1`, absolute `-OutputPath`), and `og:image`/`twitter:image`/JSON-LD `image` all point to it
-- [ ] Added as a card to `blog/index.html`'s listing, replacing/joining the placeholder text
-- [ ] Linked from `related-reading` on at least one other existing post, once there is one
-- [ ] Added as a `<url>` entry to `/sitemap.xml`
+Run the Publish Gate in `CONSTITUTION.md` §3. There is no separate checklist here, so the two can never disagree.

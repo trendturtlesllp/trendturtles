@@ -287,3 +287,4 @@ Each of these cost a correction. They are here so the reason behind a rule is no
 - An image that looks right can teach the wrong thing: the regulator's own ring picture shows the pre-2021 hallmark.
 - Keep the process simple. A step nobody runs is worse than no step.
 - Do not go back to perfect old posts. Ideas never run out, and polishing what is behind stops what is ahead. Carry the lesson into the next article.
+- A link that returns "200" can still fail for a reader: one government news page took up to 40 seconds to load. Time each link, and use the page's own main address, not an AMP or `index.html` copy.

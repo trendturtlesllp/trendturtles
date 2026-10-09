@@ -73,14 +73,14 @@ What to check, what they are really paying, which rules apply, and which rights 
 ### Episodes of this series, in writing order
 
 1. Making charges. **Live** (`gold-making-charges-india-real-cost`); left as published. Source its figures afresh before reusing any.
-2. When gold legally has no hallmark, and the ₹200 test.
-3. What digital gold, gold ETFs and bank coins really cost.
-4. Gold bonds: what changed in April 2026 and what holders should do.
-5. Family gold: how much a household may hold, and tax when selling inherited gold.
-6. Carrying gold through customs.
-7. How to check a hallmark, step by step. Now inside the main article; write it as its own episode only if there is enough new to say.
+2. What digital gold, gold ETFs and bank coins really cost.
+3. Gold bonds: what changed in April 2026 and what holders should do.
+4. Family gold: how much a household may hold, and tax when selling inherited gold.
+5. Carrying gold through customs.
 
-Each episode uses the problem and opportunity rows above that match its subject. Rows filed here that are used by another series' episodes: the Badlapur row goes in the main article; the loan-rate and loan-to-value rows go in series 2's gold-loan episode; the two locker rows go in series 2's locker episode; the PAN row goes in episode 5.
+Not episodes, because they are part of the hallmark subject and belong inside the main article: when gold legally has no hallmark, the ₹200 test at a BIS centre, older hallmarks staying valid, and how to check a hallmark step by step. The author decided this on 2026-10-09. A subject becomes its own episode only if it can carry a full article.
+
+Each episode uses the problem and opportunity rows above that match its subject. Rows filed here that are used by another series' episodes: the Badlapur row goes in the main article; the loan-rate and loan-to-value rows go in series 2's gold-loan episode; the two locker rows go in series 2's locker episode; the PAN row goes in episode 4.
 
 ---
 

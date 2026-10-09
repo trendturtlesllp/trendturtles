@@ -39,7 +39,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   2. The buyer trusts the other side without proof. Not started.
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
 - **Series 1 so far:** main article `gold-hallmark-check-india` (live) and one episode, `gold-making-charges-india-real-cost` (live). The remaining episodes are listed in the research file.
-- **Next up:** episode 2 of series 1 in the research file ("When gold legally has no hallmark, and the ₹200 test"), then the rest in the listed order, unless the author names another.
+- **Next up:** episode 2 of series 1 in the research file ("What digital gold, gold ETFs and bank coins really cost"), then the rest in the listed order, unless the author names another.
 - **Schedule:** 2026-10-10, second punch post for the hallmark article. 2026-10-11, write and publish the next article.
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.

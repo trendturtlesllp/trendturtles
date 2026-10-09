@@ -27,7 +27,7 @@ Two pillars people might expect are **not** here because the data does not suppo
 
 What to check, what they are really paying, which rules apply, and which rights they have.
 
-**Main article:** `gold-hallmark-check-india` (live; needs more depth on the standard and on the impact).
+**Main article:** `gold-hallmark-check-india` (live; left as published).
 
 ### Problems
 
@@ -72,15 +72,15 @@ What to check, what they are really paying, which rules apply, and which rights 
 
 ### Episodes of this series, in writing order
 
-1. Making charges. **Live** (`gold-making-charges-india-real-cost`); still needs its Publish Gate pass.
+1. Making charges. **Live** (`gold-making-charges-india-real-cost`); left as published. Source its figures afresh before reusing any.
 2. When gold legally has no hallmark, and the ₹200 test.
 3. What digital gold, gold ETFs and bank coins really cost.
 4. Gold bonds: what changed in April 2026 and what holders should do.
 5. Family gold: how much a household may hold, and tax when selling inherited gold.
 6. Carrying gold through customs.
-7. How to check a hallmark, step by step. Now inside the main article; decide when the main article is reworked whether it becomes its own episode.
+7. How to check a hallmark, step by step. Now inside the main article; write it as its own episode only if there is enough new to say.
 
-The main article is reworked before episode 2 is written (see "Where things stand" in the constitution). Each episode uses the problem and opportunity rows above that match its subject. Rows filed here that are used by another series' episodes: the Badlapur row goes in the main article; the loan-rate and loan-to-value rows go in series 2's gold-loan episode; the two locker rows go in series 2's locker episode; the PAN row goes in episode 5.
+Each episode uses the problem and opportunity rows above that match its subject. Rows filed here that are used by another series' episodes: the Badlapur row goes in the main article; the loan-rate and loan-to-value rows go in series 2's gold-loan episode; the two locker rows go in series 2's locker episode; the PAN row goes in episode 5.
 
 ---
 

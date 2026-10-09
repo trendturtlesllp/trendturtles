@@ -39,11 +39,12 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   2. The buyer trusts the other side without proof. Not started.
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
 - **Series 1 so far:** main article `gold-hallmark-check-india` (live) and one episode, `gold-making-charges-india-real-cost` (live). The remaining episodes are listed in the research file.
-- **Next up:** rework the main article `gold-hallmark-check-india` (below), because a series opens with its main article. Then episode 2 in the research file, and so on in the listed order, unless the author names another.
-- **Before series 1 is called finished**, two live articles need rework:
-  - `gold-hallmark-check-india`: reorder into the four-part shape (§4) and deepen the parts on the standard and on the impact. As the main article it should be about the human problem; decide then whether "how to check a hallmark" becomes its own episode.
-  - `gold-making-charges-india-real-cost`: published before the Publish Gate existed and never put through it. Known gaps: meta description is over 160 characters; the 12–25% ranges, the 2–10% buyback cut and the coin and bar rates have no source links; no lines for named audiences; its BIS Care link goes to a broker's explainer, not BIS; not in the four-part shape. Give it a full gate pass as its own job. Adding a Related Reading link to it does not count.
-- **Still to research:** the human impact of these problems (families, weddings, debts), which the main articles need. Not searched yet.
+- **Next up:** episode 2 of series 1 in the research file ("When gold legally has no hallmark, and the ₹200 test"), then the rest in the listed order, unless the author names another.
+- **Schedule:** 2026-10-10, second punch post for the hallmark article. 2026-10-11, write and publish the next article.
+- **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
+  - `gold-hallmark-check-india` is not in the four-part order.
+  - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
+- **Still to research:** the human impact of these problems (families, weddings, debts). Do it as part of each new article's research.
 
 ## 1. What this is
 
@@ -85,12 +86,12 @@ Nothing is pushed until every line is answered, with the evidence. Paste the fil
 1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape, and a reader can tell which pillar's theme it belongs to.
 2. The fact sheet is complete and every source page was opened. The headline number is the newest available.
 3. The headline says what the source measured, is a statement with a number, and uses simple words. `<title>` is 60 characters or fewer.
-4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short.
+4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short. The problem, the impact and the solution are each written so the reader sees their own situation, using only real cases and numbers.
 5. Each named audience segment gets at least one line written for it.
 6. There is at least one comparison table.
 7. There is a standalone numbered "what to do" section, and each step says how.
 8. Every factual claim is hyperlinked, and every link returns 200.
-9. The head is complete: meta description of 150 to 160 characters, canonical, OG, Twitter, share image, JSON-LD that parses, breadcrumb matching the visible one.
+9. Every item in §7 is done: search phrases placed, the full head (meta description of 150 to 160 characters, canonical, OG, Twitter, share image, JSON-LD that parses, breadcrumb matching the visible one), and the body and site items.
 10. One `<h1>`, no skipped heading levels, read time equal to body words ÷ 200.
 11. Wired in: card on the blog index, Related Reading both ways, sitemap entry with `lastmod`. The post has its Key Takeaways box, the investment-advice note, and, for an episode, a link to its series' main article.
 12. A fresh agent with no context has reviewed the draft against this file and opened the sources itself. Its gaps are fixed. If the fixes changed the headline or any fact, the review was run again.
@@ -106,6 +107,16 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 - Short sentences, simple words. Prefer two short sentences to one long one. Say "a consumer court in Bangalore", not the forum's full legal name.
 - Explain every unfamiliar term where it first appears (hallmark, karat, GST, HUID).
 - Never boring: real cases, real numbers, a reason to keep reading.
+
+**Make the reader feel it is about them**
+
+Every part is written so the reader thinks "this is my situation". This applies to the problem, the impact and the solution alike.
+
+- **Write to one person in the moment it happens:** standing at the jeweller's counter with the family waiting, signing the scheme card, handing over a mother's bangles for a loan. Use "you".
+- **The problem:** describe it the way it is lived, not the way a regulator files it. "You are shown a stamp you cannot read", not "low hallmark awareness".
+- **The impact:** say what it costs in the reader's own terms: the wedding budget, the savings of years, the shame of finding out later, the argument at home. Use the amounts and cases from the sources.
+- **The solution:** make each step something the reader can picture doing, with the words to say to the jeweller or the bank. It should leave them feeling able, not scared.
+- **Stay true.** The feeling comes from real cases and real numbers. Never invent a person, a quote or a scene, and never push the emotion further than the facts go.
 - Respect the reader. No clickbait, no talking down.
 
 **Headline (Ogilvy)**
@@ -178,18 +189,42 @@ A pillar is written as a series, like a show with episodes.
 - **Episodes (cluster articles).** One for each specific problem or fix inside the pillar (what making charges cost, how to check a hallmark). Same four-part shape, zoomed in on one thing, with real dated numbers. Each holds to the pillar's theme and shows it from a different angle; an episode that drifts from the theme belongs in another pillar or nowhere. Refresh the numbers when they drift and update `dateModified`.
 - Every article has an impact part: what the problem costs the reader in money, time, proof or trust, using the facts already sourced. Stories of broken marriages, homes sold or deaths go in only when a source reports them, written with care and never for effect. If none is found, the impact part stays with what is known.
 - Articles in the same series link to each other in "Related Reading". Leave that section out only when there is nothing to link to.
-- Order: a pillar's main article, then its episodes, then the next pillar. A series is finished when its main article and every listed episode are live and have passed the Publish Gate. When all pillars are done, agree the next topic with the author.
+- Order: a pillar's main article, then its episodes, then the next pillar. A series is finished when its main article and every listed episode are live; every article written from 2026-10-09 on must have passed the Publish Gate. When all pillars are done, agree the next topic with the author.
 
 ## 7. Page and SEO rules
 
-- `<title>`: 60 characters or fewer, keyword near the front. The `<h1>` may be longer.
-- Meta description: 150 to 160 characters.
-- Canonical, OG and Twitter tags, `og:image` on every page, `lang="en-IN"`.
-- JSON-LD: `BlogPosting` and `BreadcrumbList` on every post; `FAQPage` only for a real Q&A section.
-- One `<h1>`; headings never skip a level.
-- **Slug:** lowercase, hyphenated, keyword first, no dates. Choose it after the angle is final, because a slug is permanent once published. GitHub Pages has no redirects.
-- Outbound source links open in a new tab with `rel="noopener noreferrer"`.
+No SEO point is too small to skip. The list below is the whole checklist; gate line 9 means every item on it.
+
+**Words people search**
+
+- Before writing, note the main phrase people would type for this problem and two or three variants. Take them from the research: complaint titles, court-report headlines, the questions people ask.
+- The main phrase appears in the `<title>`, the `<h1>` or the first paragraph, the slug, the meta description, and at least one `<h2>`. Variants go in other headings and in the text. Only where they read naturally; never stuffed.
+
+**The head**
+
+- `<title>`: 60 characters or fewer, main phrase near the front, unique on the site. The `<h1>` may be longer.
+- Meta description: 150 to 160 characters, unique, with the main fact and a reason to click.
+- Canonical link, absolute and pointing to the page itself.
+- OG tags (title, description, url, type `article`, site name, image with width and height) and Twitter tags (`summary_large_image`, title, description, image).
+- `robots` meta as in the template, `lang="en-IN"`, `author` meta, viewport, favicon links.
+- JSON-LD: `BlogPosting` (headline, description, dates, author, publisher with logo, image) and `BreadcrumbList` matching the visible breadcrumb. `FAQPage` only for a real Q&A section, with the same text as on the page.
+
+**The body**
+
+- One `<h1>`; headings never skip a level; headings say what the section holds.
+- Internal links: to the series' main article, to sibling episodes in Related Reading, and from at least one older post back to the new one. Link text describes the target; never "click here".
+- Outbound source links open in a new tab with `rel="noopener noreferrer"`, and are left as normal followed links.
+- Any image has descriptive alt text, a descriptive file name, `width` and `height`, and `loading="lazy"`.
+- Short paragraphs and lists, so the page reads well on a phone. Wide tables sit inside the scrolling wrapper from the template.
+- No inline scripts or styles beyond what the template has, and no large files; the page should stay light.
+
+**The site**
+
+- **Slug:** lowercase, hyphenated, main phrase first, no dates. Choose it after the angle is final, because a slug is permanent once published. GitHub Pages has no redirects.
+- Add the post to `sitemap.xml` with today's `lastmod`, and update `lastmod` for `/blog/` and for any post edited.
+- Add the card to `blog/index.html`.
 - When a published post is edited, update `dateModified`.
+- After publishing, confirm the live page returns 200 and shows the new title.
 - **Colours:** black text and one blue (`#4c5fd5`) for links and a single accent. Light greys for borders and boxes. Nothing else, and no inline colour styles. `blog.css` overrides the root stylesheet's navy headings and teal bold text on blog pages.
 - **Tables:** plain `<table>` markup. Add `class="text-table"` when the cells hold words rather than numbers.
 - **Images:** only when one adds real understanding. A picture is copyrighted unless its owner says otherwise; "it doesn't say do not use" is not permission. Use an image only with a stated licence or policy that allows it, and credit the source. BIS allows reuse of its website material with acknowledgement. Do not use a picture that shows an outdated standard. No AI illustrations, no cartoons, no filler stock photos. A table beats a chart image for simple numbers.
@@ -251,3 +286,4 @@ Each of these cost a correction. They are here so the reason behind a rule is no
 - Posts shared on X and LinkedIn showed a broken preview because no page had an `og:image`.
 - An image that looks right can teach the wrong thing: the regulator's own ring picture shows the pre-2021 hallmark.
 - Keep the process simple. A step nobody runs is worse than no step.
+- Do not go back to perfect old posts. Ideas never run out, and polishing what is behind stops what is ahead. Carry the lesson into the next article.

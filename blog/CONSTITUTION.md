@@ -116,6 +116,7 @@ Every part is written so the reader thinks "this is my situation". This applies 
 - **The problem:** describe it the way it is lived, not the way a regulator files it. "You are shown a stamp you cannot read", not "low hallmark awareness".
 - **The impact:** say what it costs in the reader's own terms: the wedding budget, the savings of years, the shame of finding out later, the argument at home. Use the amounts and cases from the sources.
 - **The solution:** make each step something the reader can picture doing, with the words to say to the jeweller or the bank. It should leave them feeling able, not scared.
+- **Show the reported case behind each point.** Wherever the problem, the impact or the solution is described, attach a real case that a person or family reported, in one or two lines with its year and a link: what happened to them, what it cost, "read the case". Example of the form: "Because the gold was less pure than promised, the marriage ended. Read the case." Keep it short so it does not turn into a story. Its job is to show that these are not small issues and that real people suffer from them. If no reported case can be found and opened, say the point plainly and do not make one up.
 - **Stay true.** The feeling comes from real cases and real numbers. Never invent a person, a quote or a scene, and never push the emotion further than the facts go.
 - Respect the reader. No clickbait, no talking down.
 
@@ -131,7 +132,7 @@ Every part is written so the reader thinks "this is my situation". This applies 
 The reader should recognise their own experience and leave knowing which mistake not to make. Four parts, in this order:
 
 1. **The issue**, shown in detail with its sources.
-2. **What people go through because of it:** real cases, court rulings, money lost.
+2. **What people go through because of it:** real reported cases, court rulings, money lost. Each one in a line or two, with its link.
 3. **The impact:** what it does to the buyer, such as trust given and then broken.
 4. **How to avoid it:** numbered steps a reader can follow.
 

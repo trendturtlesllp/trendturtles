@@ -40,7 +40,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
 - **Series 1 so far:** main article `gold-hallmark-check-india` (live) and one episode, `gold-making-charges-india-real-cost` (live). The remaining episodes are listed in the research file.
 - **Next up:** episode 2 of series 1 in the research file ("What digital gold, gold ETFs and bank coins really cost"), then the rest in the listed order, unless the author names another.
-- **Schedule:** 2026-10-10, second punch post for the hallmark article. 2026-10-11, write and publish the next article.
+- **Schedule:** hallmark social posts are done (2026-10-10). 2026-10-11, write and publish the next article.
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
   - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
@@ -239,6 +239,7 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 - **LinkedIn:** one main post in plain text with no link in the body. The link goes in the first comment, because LinkedIn shows link posts to fewer people.
 - **X:** one thread of 4 to 5 tweets. The link goes in the last tweet of the thread.
 - **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day. The opportunities in the post make the best punches (for example, "if hallmarked gold is less pure than its stamp, you are owed twice the difference").
+- **Language of every social post:** very simple English and very short sentences, one idea per line. Simpler than the article. No long or joined sentences, no formal words ("entitle", "turns out", "in value"). The author treats this as important.
 - Every social post leads with a specific number or fact, the same as the article.
 - These bring readers and visibility. They are not SEO backlinks.
 

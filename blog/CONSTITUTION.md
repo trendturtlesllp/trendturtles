@@ -38,9 +38,10 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   1. The buyer does not know. **Series in progress.**
   2. The buyer trusts the other side without proof. Not started.
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
-- **Series 1 so far:** main article `gold-hallmark-check-india` (live) and one episode, `gold-making-charges-india-real-cost` (live). The remaining episodes are listed in the research file.
-- **Next up:** episode 2 of series 1 in the research file ("What digital gold, gold ETFs and bank coins really cost"), then the rest in the listed order, unless the author names another.
-- **Schedule:** hallmark social posts are done (2026-10-10). 2026-10-11, write and publish the next article.
+- **Series 1 so far:** main article `gold-hallmark-check-india` (live) and two episodes: `gold-making-charges-india-real-cost` (live) and `digital-gold-safe-india` (live, 2026-10-11). The remaining episodes are listed in the research file.
+- **Next up:** episode 3 of series 1 in the research file ("Gold bonds: what changed in April 2026 and what holders should do"), then the rest in the listed order, unless the author names another.
+- **Schedule:** `digital-gold-safe-india` published 2026-10-11; its punch posts go out one a day after that.
+- **Headlines come from the cases.** Where a judge, a regulator or a person in a reported case said the line, use their words as the headline, with who said it and its status directly under it (author, 2026-10-11).
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
   - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
@@ -269,6 +270,7 @@ Leads and ideas live in the topic's research file, not here.
 |---|---|---|---|---|
 | `gold-hallmark-check-india` | Gold 1, "the buyer does not know": main article | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
 | `gold-making-charges-india-real-cost` | Gold 1: episode | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
+| `digital-gold-safe-india` | Gold 1: episode | Buyers do not know that no financial regulator watches digital gold, or what it costs on day one | Karnataka High Court order, March 2026: investors of one app saying "there is no gold and no money" (unproven); SEBI caution, 8 Nov 2025 | 2026-10-11 |
 
 Notes on the hallmark post: the author chose its headline ("82% of Gold Buyers in India Don't Know about Hallmark, "Gold Purity Standards""), so its first paragraph gives the survey's exact question and full breakdown and must keep doing so. It has no in-article image, because no freely usable photo of the current hallmark was found.
 

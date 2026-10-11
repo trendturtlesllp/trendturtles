@@ -86,7 +86,7 @@ Nothing is pushed until every line is answered, with the evidence. Paste the fil
 1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape, and a reader can tell which pillar's theme it belongs to.
 2. The fact sheet is complete and every source page was opened. The headline number is the newest available.
 3. The headline says what the source measured, is a statement with a number, and uses simple words. `<title>` is 60 characters or fewer.
-4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short. The problem, the impact and the solution are each written so the reader sees their own situation, using only real cases and numbers.
+4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short. The problem, the impact and the solution are each written so the reader sees their own situation, using only real cases and numbers. A reader with no finance or legal background can follow every paragraph on one reading; the simple-language test in §4 was run after the last edit, not before.
 5. Each named audience segment gets at least one line written for it.
 6. There is at least one comparison table.
 7. There is a standalone numbered "what to do" section, and each step says how.
@@ -105,6 +105,7 @@ A "no" is either fixed or reported to the author with the reason. Never call a p
 - Direct and factual. No invented dialogue, no characters, no story framing.
 - Lead with the single most interesting true fact. No scene-setting.
 - Short sentences, simple words. Prefer two short sentences to one long one. Say "a consumer court in Bangalore", not the forum's full legal name.
+- **The simple-language test.** Say who did what to whom, in the order it happened. One idea per sentence, about 15 words at most. After any quote from a court or a regulator, add "In simple words:" and say it plainly. No legal or finance words where a plain one exists ("watches", not "regulates"; "cancelled", not "set aside").
 - Explain every unfamiliar term where it first appears (hallmark, karat, GST, HUID).
 - Never boring: real cases, real numbers, a reason to keep reading.
 
@@ -251,7 +252,7 @@ This is a Windows machine. Use Git Bash for `curl`, `grep` and `git`, and Window
 - **Check links:** `curl -s -o /dev/null -w '%{http_code}' -L -A "<a browser user-agent>" <url>` for every outbound link. Each must return 200. If a source blocks scripted requests, open it another way and say so in the gate.
 - **Check JSON-LD:** in PowerShell, pass each `<script type="application/ld+json">` block to `ConvertFrom-Json`. It must not throw.
 - **Count words:** strip the tags from everything inside `<section class="section">` and count. Read time is that number ÷ 200, rounded.
-- **Fresh reviewer:** start a new general-purpose agent with no context. Tell it not to edit anything, to read this file and the draft, to open every source itself, and to report what the sources do not support and which gate lines fail.
+- **Fresh reviewer:** start a new general-purpose agent with no context. Tell it not to edit anything, to read this file and the draft, to open every source itself, and to report what the sources do not support and which gate lines fail. Also tell it to read once as someone who has never read a finance or court report, and to list every sentence it had to read twice. When its fact fixes go in, write each fix in the same simple words; do not paste in the legal wording.
 - **Blog index card:** newest post first. Heading is the post's `<h1>`, or its `<title>` when the `<h1>` is very long. Text is one or two sentences based on the meta description.
 - **Sitemap:** `<loc>` and `<lastmod>` only. Add the new post. Set `lastmod` to today for it, for `/blog/`, and for any post you edited.
 - **Editing a live post**, even to add a Related Reading link: set its `dateModified` to today.
@@ -290,3 +291,4 @@ Each of these cost a correction. They are here so the reason behind a rule is no
 - Keep the process simple. A step nobody runs is worse than no step.
 - Do not go back to perfect old posts. Ideas never run out, and polishing what is behind stops what is ahead. Carry the lesson into the next article.
 - A link that returns "200" can still fail for a reader: one government news page took up to 40 seconds to load. Time each link, and use the page's own main address, not an AMP or `index.html` copy.
+- The digital gold draft followed every fact rule and was still too hard to read. "Simple" was a line I ticked myself, the reviewers were asked about facts, and each fairness fix came in as legal wording. A rule with no test does not get followed, so the simple-language test now runs last.

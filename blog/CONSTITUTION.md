@@ -243,6 +243,7 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 - **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day. The opportunities in the post make the best punches (for example, "if hallmarked gold is less pure than its stamp, you are owed twice the difference").
 - **Language of every social post:** very simple English and very short sentences, one idea per line. Simpler than the article. No long or joined sentences, no formal words ("entitle", "turns out", "in value"). The author treats this as important.
 - Every social post leads with a specific number or fact, the same as the article.
+- **The first line of a social post** follows the headline rule: use words someone in the case said (a judge, a regulator, a named person), in quotes, with who said it on the next line. If there is no such line, state the fact. Never open with a line that reads as advice to buy or sell ("Buy ₹10,000 of digital gold today" was written once and was wrong).
 - These bring readers and visibility. They are not SEO backlinks.
 
 ## 9. How to do the mechanical steps

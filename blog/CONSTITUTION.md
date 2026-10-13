@@ -245,6 +245,8 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 - **Language of every social post:** very simple English and very short sentences, one idea per line. Simpler than the article. No long or joined sentences, no formal words ("entitle", "turns out", "in value"). The author treats this as important.
 - Every social post leads with a specific number or fact, the same as the article.
 - **The first line of a social post** follows the headline rule: use words someone in the case said (a judge, a regulator, a named person), in quotes, with who said it on the next line. If there is no such line, state the fact. Never open with a line that reads as advice to buy or sell ("Buy ₹10,000 of digital gold today" was written once and was wrong). Choose the line by the heaviest-impact rule in §4.
+- **Shape of a social post** (author, 2026-10-13): the fact in one line, then who said it and the date on the next line ("SEBI does not watch digital gold!" / "SEBI, 08-Nov-25"). Then two or three plain lines, one real case, and one thing the reader can do today. No question-and-answer pattern and no numbered list; a post that looks filled into a template reads as copy-paste.
+- **One personal line in the author's own voice** in each post ("I did not know nobody checks these apps"). It gives the post a human touch. It is a claim about the author, so offer it as a suggestion and let the author confirm or reword it; never invent an experience for him.
 - These bring readers and visibility. They are not SEO backlinks.
 
 ## 9. How to do the mechanical steps

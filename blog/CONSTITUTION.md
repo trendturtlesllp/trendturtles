@@ -124,6 +124,7 @@ Every part is written so the reader thinks "this is my situation". This applies 
 
 **Headline (Ogilvy)**
 
+- **The heaviest impact leads.** List everything the article shows, and ask which one hurts the reader most. That one is the headline, and the first line of every social post. "Nobody watches digital gold" is heavier than "you lose 5 to 6% on day one": the first puts all the savings at risk, the second is a cost. A smaller fact never leads just because it has a number. The headline carries most of the weight of the piece.
 - A statement, not a question and not "N things to check". Model: "At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock."
 - It carries a real number or fact from a source, and it names the cause of the problem.
 - It must not claim more than the source measured. Read the survey's actual question, not the press release's summary of it.
@@ -243,7 +244,7 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 - **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day. The opportunities in the post make the best punches (for example, "if hallmarked gold is less pure than its stamp, you are owed twice the difference").
 - **Language of every social post:** very simple English and very short sentences, one idea per line. Simpler than the article. No long or joined sentences, no formal words ("entitle", "turns out", "in value"). The author treats this as important.
 - Every social post leads with a specific number or fact, the same as the article.
-- **The first line of a social post** follows the headline rule: use words someone in the case said (a judge, a regulator, a named person), in quotes, with who said it on the next line. If there is no such line, state the fact. Never open with a line that reads as advice to buy or sell ("Buy ₹10,000 of digital gold today" was written once and was wrong).
+- **The first line of a social post** follows the headline rule: use words someone in the case said (a judge, a regulator, a named person), in quotes, with who said it on the next line. If there is no such line, state the fact. Never open with a line that reads as advice to buy or sell ("Buy ₹10,000 of digital gold today" was written once and was wrong). Choose the line by the heaviest-impact rule in §4.
 - These bring readers and visibility. They are not SEO backlinks.
 
 ## 9. How to do the mechanical steps

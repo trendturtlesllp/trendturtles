@@ -40,7 +40,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
 - **Series 1 so far:** main article `gold-hallmark-check-india` (live) and two episodes: `gold-making-charges-india-real-cost` (live) and `digital-gold-safe-india` (live, 2026-10-11). The remaining episodes are listed in the research file.
 - **Next up:** episode 3 of series 1 in the research file ("Gold bonds: what changed in April 2026 and what holders should do"), then the rest in the listed order, unless the author names another.
-- **Schedule:** `digital-gold-safe-india` published 2026-10-11; its punch posts go out one a day after that.
+- **Schedule:** next article (series 1 episode 3, gold bonds) on Thursday 2026-10-15, then Sunday 2026-10-18. Digital gold punch posts: bank coin on 2026-10-15, the 5 to 6% cost after it.
 - **Headlines come from the cases.** Where a judge, a regulator or a person in a reported case said the line, use their words as the headline, with who said it and its status directly under it (author, 2026-10-11).
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
@@ -236,7 +236,7 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 
 ## 8. Cadence and social posts
 
-**Cadence:** 2 to 3 posts a week. It is a target, never a reason to skip a step in §2.
+**Cadence:** at least 2 new articles a week, on Thursday and Sunday (author, 2026-10-14). A third is welcome. It is a target, never a reason to skip a step in §2. Start the research a day early, so the step-5 stop is ready on the morning of the publish day.
 
 **Social posts:** there is no way to post directly, so each publish ends with ready-to-paste text.
 

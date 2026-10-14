@@ -45,6 +45,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
   - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
+- **Google Search Console:** set up 2026-10-14. Sitemap read with status Success, 8 pages found. No page was indexed yet; indexing was requested for the three posts and the blog hub. Check the Pages and Performance reports around 2026-10-28. The two `google....html` files at the site root are the verification files; never delete them.
 - **Still to research:** the human impact of these problems (families, weddings, debts). Do it as part of each new article's research.
 
 ## 1. What this is
@@ -264,6 +265,7 @@ This is a Windows machine. Use Git Bash for `curl`, `grep` and `git`, and Window
 - **Editing a live post**, even to add a Related Reading link: set its `dateModified` to today.
 - **Commit and push** straight to `main`, with a plain one-line message saying what changed.
 - **Confirm it is live:** GitHub Pages takes up to two minutes. Request the new URL with `?v=<any number>` added until it returns 200 and shows the new `<h1>`.
+- **Ask Google to index it:** the author opens Google Search Console (set up 2026-10-14 under the Gmail that owns the GitHub repo), pastes the new post's URL into "Inspect any URL", and presses "Request indexing". Give him the URL to paste in the final message. The sitemap is already submitted; Google re-reads it on its own.
 - **Old share previews:** X and LinkedIn cache them. Add `?v=2` to the link on X, or use LinkedIn's Post Inspector.
 - `robots.txt` blocks crawling of this file, the template and the script. `.nojekyll` makes GitHub Pages serve files as committed. `404.html` handles any missing URL.
 

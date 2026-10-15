@@ -38,8 +38,8 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   1. The buyer does not know. **Series in progress.**
   2. The buyer trusts the other side without proof. Not started.
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
-- **Series 1 so far:** main article `gold-hallmark-check-india` (live) and two episodes: `gold-making-charges-india-real-cost` (live) and `digital-gold-safe-india` (live, 2026-10-11). The remaining episodes are listed in the research file.
-- **Next up:** episode 3 of series 1 in the research file ("Gold bonds: what changed in April 2026 and what holders should do"), then the rest in the listed order, unless the author names another.
+- **Series 1 so far:** main article `gold-hallmark-check-india` and three episodes: `gold-making-charges-india-real-cost`, `digital-gold-safe-india` (2026-10-11) and `sovereign-gold-bond-tax-india` (2026-10-15). The remaining episodes are listed in the research file.
+- **Next up:** episode 4 of series 1 in the research file ("Family gold: how much a household may hold, and tax when selling inherited gold"), then episode 5 (customs), unless the author names another.
 - **Schedule:** the digital gold article ends with its last punch post on 2026-10-14 (bank coin). Articles then on Thursday 2026-10-15 (series 1 episode 3, gold bonds), Sunday 2026-10-18 (episode 4, family gold and tax), Wednesday 2026-10-21 (episode 5, customs, which ends series 1), Sunday 2026-10-25 (series 2 main article), then every Wednesday and Sunday.
 - **Headlines come from the cases.** Where a judge, a regulator or a person in a reported case said the line, use their words as the headline, with who said it and its status directly under it (author, 2026-10-11).
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
@@ -279,6 +279,7 @@ Leads and ideas live in the topic's research file, not here.
 | `gold-hallmark-check-india` | Gold 1, "the buyer does not know": main article | Buyers don't know how to check a hallmark, so they rely on the seller | LocalCircles, April 2025: only 18% of 29,853 answers said their jewellery had the six-character code | 2026-10-08 |
 | `gold-making-charges-india-real-cost` | Gold 1: episode | Making charges and GST are a cost buyers are not shown clearly and never get back on resale | About 16% of a typical bill; a 2018 Bangalore consumer-court case (3–5% promised, 23.5% charged) | 2026-10-06 |
 | `digital-gold-safe-india` | Gold 1: episode | Buyers do not know that no financial regulator watches digital gold, or what it costs on day one | Karnataka High Court order, March 2026: investors of one app saying "there is no gold and no money" (unproven); SEBI caution, 8 Nov 2025 | 2026-10-11 |
+| `sovereign-gold-bond-tax-india` | Gold 1: episode | Gold bond holders do not know that from 1 April 2026 only bonds bought at issue and held to maturity stay tax-free, or how a closed account or a missed date affects them | Value Research, June 2026: "Secondary-market buyers now face 12.5 per cent LTCG at maturity" | 2026-10-15 |
 
 Notes on the hallmark post: the author chose its headline ("82% of Gold Buyers in India Don't Know about Hallmark, "Gold Purity Standards""), so its first paragraph gives the survey's exact question and full breakdown and must keep doing so. It has no in-article image, because no freely usable photo of the current hallmark was found.
 

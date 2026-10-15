@@ -45,7 +45,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 - **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
   - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
-- **Google Search Console:** set up 2026-10-14. Sitemap read with status Success, 8 pages found. No page was indexed yet; indexing was requested for the three posts and the blog hub. Check the Pages and Performance reports around 2026-10-28. The two `google....html` files at the site root are the verification files; never delete them.
+- **Google Search Console:** set up 2026-10-14. Sitemap read with status Success, 8 pages found. No page was indexed yet; indexing was requested for the three posts and the blog hub. Check the Pages and Performance reports around 2026-10-28. The file `google9c2a3179fc6e3c6f.html` at the site root is the verification file for the Search Console account; never delete it. (A second, unused one was removed on 2026-10-15.)
 - **Still to research:** the human impact of these problems (families, weddings, debts). Do it as part of each new article's research.
 
 ## 1. What this is

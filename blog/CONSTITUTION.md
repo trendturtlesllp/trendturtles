@@ -126,6 +126,7 @@ Every part is written so the reader thinks "this is my situation". This applies 
 **Headline (Ogilvy)**
 
 - **The heaviest impact leads.** List everything the article shows, and ask which one hurts the reader most. That one is the headline, and the first line of every social post. "Nobody watches digital gold" is heavier than "you lose 5 to 6% on day one": the first puts all the savings at risk, the second is a cost. A smaller fact never leads just because it has a number. The headline carries most of the weight of the piece.
+- **Before offering any headline, check all five:** (1) the words are a source's own, in quotation marks; (2) a reader can tell the topic from the headline alone, so add a short topic label in front when the quote does not name it (`Sovereign Gold Bonds: "..."`); (3) it states a fact or a number, not an opinion; (4) it carries the heaviest impact on the reader; (5) the words are simple. A headline that fails one is not offered. (Author, 2026-10-15: three options failed this on the gold bond article.)
 - A statement, not a question and not "N things to check". Model: "At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock."
 - It carries a real number or fact from a source, and it names the cause of the problem.
 - It must not claim more than the source measured. Read the survey's actual question, not the press release's summary of it.

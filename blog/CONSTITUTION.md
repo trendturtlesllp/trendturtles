@@ -26,7 +26,7 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
 >
 > Write and publish the next article in the current series. Which one: `[leave blank to follow "Next up", or name an episode from the research file]`.
 >
-> Follow §2 step by step. Stop once, at step 5, and show me everything that step lists. After I approve, finish everything without asking again unless you are genuinely blocked. End with the filled Publish Gate and the social posts.
+> Follow §2 step by step. Stop once, at step 5, and show me everything that step lists. After I approve, finish everything without asking again unless you are genuinely blocked. End with the filled Publish Gate, the social posts, and the constitution review (§2 step 10).
 
 ## Where things stand
 
@@ -40,12 +40,11 @@ Paste this into any chat, including a brand new one with no memory. Nothing else
   3. The buyer pays first for a promise. Not started; needs more research on fixes first.
 - **Series 1 so far:** main article `gold-hallmark-check-india` and three episodes: `gold-making-charges-india-real-cost`, `digital-gold-safe-india` (2026-10-11) and `sovereign-gold-bond-tax-india` (2026-10-15). The remaining episodes are listed in the research file.
 - **Next up:** episode 4 of series 1 in the research file ("Family gold: how much a household may hold, and tax when selling inherited gold"), then episode 5 (customs), unless the author names another.
-- **Schedule:** the digital gold article ends with its last punch post on 2026-10-14 (bank coin). Articles then on Thursday 2026-10-15 (series 1 episode 3, gold bonds), Sunday 2026-10-18 (episode 4, family gold and tax), Wednesday 2026-10-21 (episode 5, customs, which ends series 1), Sunday 2026-10-25 (series 2 main article), then every Wednesday and Sunday.
-- **Headlines come from the cases.** Where a judge, a regulator or a person in a reported case said the line, use their words as the headline, with who said it and its status directly under it (author, 2026-10-11).
-- **The two live articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps, for the record, not a to-do list:
+- **Schedule:** articles on Sunday 2026-10-18 (episode 4, family gold and tax), Wednesday 2026-10-21 (episode 5, customs, which ends series 1), Sunday 2026-10-25 (series 2 main article), then every Wednesday and Sunday (§8).
+- **Published articles stay as they are** (author's decision, 2026-10-09). We do not go back and rework published posts; what we learn goes into the next ones. Fix a live post only if a fact in it turns out to be wrong. Known gaps in the two oldest posts, for the record, not a to-do list:
   - `gold-hallmark-check-india` is not in the four-part order.
   - `gold-making-charges-india-real-cost` was never through the Publish Gate. Several of its figures have no source link (the 12–25% ranges, the 2–10% buyback cut, the coin and bar rates), its hallmarking fee disagrees with the BIS FAQ, and its BIS Care link goes to a broker's page. **Do not reuse a figure from it in a new article without sourcing it afresh.**
-- **Google Search Console:** set up 2026-10-14. Sitemap read with status Success, 8 pages found. No page was indexed yet; indexing was requested for the three posts and the blog hub. Check the Pages and Performance reports around 2026-10-28. The file `google9c2a3179fc6e3c6f.html` at the site root is the verification file for the Search Console account; never delete it. (A second, unused one was removed on 2026-10-15.)
+- **Google Search Console:** set up 2026-10-14. Sitemap read with status Success, 8 pages found. No page was indexed yet; indexing was requested for every post and the blog hub. The first "not indexed" reasons (2026-10-15) were all old pages removed from the site (404s, old category pages, `index.html` crawled before it had a canonical tag); the author chose to let Google drop them on its own. Check the Pages and Performance reports around 2026-10-28. The file `google9c2a3179fc6e3c6f.html` at the site root is the verification file for the Search Console account; never delete it. (A second, unused one was removed on 2026-10-15.)
 - **Still to research:** the human impact of these problems (families, weddings, debts). Do it as part of each new article's research.
 
 ## 1. What this is
@@ -73,11 +72,12 @@ The blog publishes plain, factual, Ogilvy-style articles on Indian finance and m
 2. **Take the next episode** of the current series: the author names it, or "Next up" does. A pillar's main article comes before its episodes. Then deepen it: search complaints, consumer forums, court cases, regulator notices and surveys for that specific problem. A topic ("gold investing") is not a problem. A checklist is not a problem.
 3. **State cause and effect in two lines**, and in one more line how this article shows its pillar's theme from a new angle. Example: buyers don't know how to check a hallmark (cause), so they rely on the seller, and some sellers exploit that (effect). The article is built on the cause. Note any opportunity that belongs with this problem.
 4. **Write the fact sheet.** One line for every number, date and case the post will use: the claim, the source link, the date on the source page, who the source attributes it to. If a page carries no date, write "undated" and the date you read it. Open every source page and read it. A search-result summary is not a source.
-5. **Stop and show the author:** the problem in one sentence, cause and effect, how it fits the pillar's theme, the opportunities it will carry, the fact sheet, 2 to 3 headline options, the outline, the audience segments, and the slug. Wait for approval. The headline is the author's decision; when the author gives exact wording, use it exactly.
+5. **Stop and show the author:** the problem in one sentence, cause and effect, how it fits the pillar's theme, the opportunities it will carry, the fact sheet, 2 to 3 headline options (each with its six headline checks from §4 shown ticked), the outline, the audience segments, and the slug. Wait for approval. The headline is the author's decision; when the author gives exact wording, use it exactly.
 6. **Write** the post from `POST_TEMPLATE.md`, in the four-part shape, following §4 and §7.
 7. **Run the Publish Gate** (§3), including the fresh reviewer. Fix what it finds.
 8. **Publish:** share image, card on `blog/index.html`, Related Reading in both directions, `sitemap.xml`, commit, push to `main`, then confirm the live URL loads. §9 says how to do each of these.
-9. **Finish:** mark the rows and the episode as posted in the research file, update "Where things stand" and §10, commit and push again, and give the author the social posts (§8).
+9. **Finish:** mark the rows and the episode as posted in the research file, update "Where things stand" and §10, commit and push again, give the author the social posts (§8), and the URL to paste into Search Console (§9).
+10. **Review this whole file** (author, 2026-10-17). After every article, and after every set of social posts, read this constitution from top to bottom. Write in what was learned, remove what no longer applies, and fix any two rules that say different things. A new chat knows only this file, so a stale or conflicting line here becomes a mistake there. Commit and push, and tell the author in one line what changed.
 
 If the research file has no real, specific problem left, say so and do not write a generic post to fill the slot.
 
@@ -87,7 +87,7 @@ Nothing is pushed until every line is answered, with the evidence. Paste the fil
 
 1. The problem is an entry in the topic's research file and can be stated in one sentence, with a source. The post follows the four-part shape, and a reader can tell which pillar's theme it belongs to.
 2. The fact sheet is complete and every source page was opened. The headline number is the newest available.
-3. The headline says what the source measured, is a statement with a number, and uses simple words. `<title>` is 60 characters or fewer.
+3. The headline passes all six headline checks in §4, shown ticked. `<title>` is 60 characters or fewer.
 4. Every term a non-finance reader may not know is explained where it first appears. Sentences are short. The problem, the impact and the solution are each written so the reader sees their own situation, using only real cases and numbers. A reader with no finance or legal background can follow every paragraph on one reading; the simple-language test in §4 was run after the last edit, not before.
 5. Each named audience segment gets at least one line written for it.
 6. There is at least one comparison table.
@@ -123,14 +123,30 @@ Every part is written so the reader thinks "this is my situation". This applies 
 - **Stay true.** The feeling comes from real cases and real numbers. Never invent a person, a quote or a scene, and never push the emotion further than the facts go.
 - Respect the reader. No clickbait, no talking down.
 
-**Headline (Ogilvy)**
+**Headlines: the one rule for every headline**
 
-- **The heaviest impact leads.** List everything the article shows, and ask which one hurts the reader most. That one is the headline, and the first line of every social post. "Nobody watches digital gold" is heavier than "you lose 5 to 6% on day one": the first puts all the savings at risk, the second is a cost. A smaller fact never leads just because it has a number. The headline carries most of the weight of the piece.
-- **How a headline is found** (author, 2026-10-15): read the complaints and cases for the episode, and read between their lines for the sentence that shows the series' human problem (for series 1, the buyer did not know). The headline must carry that theme, like everything else in the episode. Then check all six before offering it: (1) the words are a source's own, in quotation marks; (2) a reader can tell the topic from the headline alone, so add a short topic label in front when the quote does not name it (`Sovereign Gold Bonds: "..."`); (3) it carries a real number from the source (a rupee amount, a percentage, a count, a time limit); (4) it is a straight, affirmative statement of fact, like the Rolls-Royce line: it says directly what happens, with no "if", no "it" or "they" that needs the story to explain it, and no opinion; (5) it carries the heaviest impact on the reader; (6) the words are simple, or the line directly under it says them simply. Last test: would it make the reader stop scrolling? A headline that fails any of these is not offered. The first line of every social post is a headline too and goes through the same six checks. Show the six checks, ticked, under every headline or first line you offer, so a miss is visible before the author has to find it (author, 2026-10-17).
-- A statement, not a question and not "N things to check". Model: "At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock."
-- It carries a real number or fact from a source, and it names the cause of the problem.
-- It must not claim more than the source measured. Read the survey's actual question, not the press release's summary of it.
-- A rupee figure built by adding unrelated numbers is not a fact. Use a percentage or a single sourced figure.
+This covers the article headline, the first line of every social post, and any other line that leads. It is the only place headline rules live.
+
+Model (Ogilvy): "At 60 miles an hour the loudest noise in this new Rolls-Royce comes from the electric clock." A mechanic said it; it is a plain fact with a number; it says exactly what happens.
+
+How to find it:
+
+1. Read the complaints, cases and reports for this piece.
+2. Read between their lines for the sentence that shows the series' human problem (for series 1: the buyer did not know). Everything in the piece, the headline included, carries that theme.
+3. List everything the piece shows and ask which one hurts the reader most. That one leads. "Nobody watches digital gold" is heavier than "you lose 5 to 6% on day one": the first puts all the savings at risk, the second is a cost.
+
+The six checks. A line that fails any one is not offered:
+
+1. **Source's own words**, in quotation marks, copied from the page. A line not in quotation marks is a line we wrote.
+2. **Topic clear** from the line alone. If the quote does not name it, put a short label in front: `Sovereign Gold Bonds - "..."`.
+3. **A real number** from the source: a rupee amount, a percentage, a count, a time limit.
+4. **A straight, affirmative statement of fact**: it says directly what happens. No question, no "if", no "it" or "they" that needs the story to explain it, no opinion, no "N things to check".
+5. **The heaviest impact** on the reader.
+6. **Simple words**, or the line directly under it says them simply.
+
+Last test: would the reader stop scrolling?
+
+Show the six checks, ticked, under every headline or first line offered, so a miss is visible before the author has to find it. Also: never claim more than the source measured (read the survey's actual question), never build a rupee figure by adding unrelated numbers, and never write a line that reads as advice to buy or sell. The author has the final say and may choose a line that fails a check; use it exactly.
 
 **The shape of every post**
 
@@ -243,12 +259,11 @@ No SEO point is too small to skip. The list below is the whole checklist; gate l
 
 - **LinkedIn:** one main post in plain text with no link in the body. It ends with one line saying what the reader will find at the link, then "Link in comments." (for example: "How to check which bond you hold, and 6 steps. Link in comments."). A bare "Link in comments." does not tell anyone why to click (author, 2026-10-15). The first comment holds only the link, nothing else. LinkedIn shows link posts to fewer people, and readers do not look in the comments unless the post tells them to.
 - **X:** one thread of 4 to 5 tweets. The link goes in the last tweet of the thread.
-- **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing. Never several on the same day. The opportunities in the post make the best punches (for example, "if hallmarked gold is less pure than its stamp, you are owed twice the difference"). A punch post ends the same way: one line on what the link holds, then "Link in comments." on LinkedIn or "Link below." on X, and the comment or reply holds only the link.
+- **Punch posts:** 2 to 3 short posts for each platform, one fact each, posted one a day on the days after publishing, until the next article. Never several on the same day. The opportunities in the article make good punches. A punch post ends the same way as the main post: one line on what the link holds, then "Link in comments." on LinkedIn or "Link below." on X, and the comment or reply holds only the link.
+- **The first line of every post** is a headline: it goes through the six checks in §4, shown ticked, every time.
+- **Shape of a social post** (author, 2026-10-13): the first line; on the next line who said it and the date (`Sovereign Gold Bonds - "Secondary-market buyers now face 12.5% LTCG at maturity"` / `Value Research, 05-Jun-26`). Then two or three plain lines, one real case, the personal line, one thing the reader can do today, and the line on what the link holds. No question-and-answer pattern and no numbered list; a post that looks filled into a template reads as copy-paste.
 - **Language of every social post:** very simple English and very short sentences, one idea per line. Simpler than the article. No long or joined sentences, no formal words ("entitle", "turns out", "in value"). The author treats this as important.
-- Every social post leads with a specific number or fact, the same as the article.
-- **The first line of a social post** follows the headline rule: use words someone in the case said (a judge, a regulator, a named person), in quotes, with who said it on the next line. If there is no such line, state the fact. Never open with a line that reads as advice to buy or sell ("Buy ₹10,000 of digital gold today" was written once and was wrong). Choose the line by the heaviest-impact rule in §4. Check before handing over any post: copy the first line from the source page itself, in quotation marks, and say where it came from. A line not in quotation marks is a line we wrote, and it does not open a post.
-- **Shape of a social post** (author, 2026-10-13): the fact in one line, then who said it and the date on the next line ("SEBI does not watch digital gold!" / "SEBI, 08-Nov-25"). Then two or three plain lines, one real case, and one thing the reader can do today. No question-and-answer pattern and no numbered list; a post that looks filled into a template reads as copy-paste.
-- **One personal line in the author's own voice** in each post ("I did not know nobody checks these apps"). It gives the post a human touch. Always write it into the post itself, never as a placeholder (author, 2026-10-15). It is a claim about the author, so keep it modest and believable; he reads it and says if it should change. Never invent a specific event or experience for him.
+- **One personal line in the author's own voice** in each post ("I did not know nobody checks these apps"). It gives the post a human touch. Always write it into the post itself, never as a placeholder (author, 2026-10-15). It is a claim about the author, so keep it modest and believable; the author reads it and says if it should change. Never invent a specific event or experience for the author.
 - **Engage every day, about 15 minutes** (author, 2026-10-14; LinkedIn about 600 followers, X about 90). Posts reach only followers; reach grows by joining others' posts. LinkedIn: comment on 3 to 5 recent posts about gold or personal finance, each comment carrying one sourced fact in 2 or 3 lines, and reply to every comment on your own post in the first hour. X: 3 to 5 replies with a fact on bigger finance accounts' tweets, never with a link. Judge results after 4 weeks of posts, not one week.
 - These bring readers and visibility. They are not SEO backlinks.
 
@@ -266,7 +281,7 @@ This is a Windows machine. Use Git Bash for `curl`, `grep` and `git`, and Window
 - **Editing a live post**, even to add a Related Reading link: set its `dateModified` to today.
 - **Commit and push** straight to `main`, with a plain one-line message saying what changed.
 - **Confirm it is live:** GitHub Pages takes up to two minutes. Request the new URL with `?v=<any number>` added until it returns 200 and shows the new `<h1>`.
-- **Ask Google to index it:** the author opens Google Search Console (set up 2026-10-14 under the Gmail that owns the GitHub repo), pastes the new post's URL into "Inspect any URL", and presses "Request indexing". Give him the URL to paste in the final message. The sitemap is already submitted; Google re-reads it on its own.
+- **Ask Google to index it:** the author opens Google Search Console (set up 2026-10-14 under the Gmail that owns the GitHub repo), pastes the new post's URL into "Inspect any URL", and presses "Request indexing". Give the author the URL to paste in the final message. The sitemap is already submitted; Google re-reads it on its own.
 - **Old share previews:** X and LinkedIn cache them. Add `?v=2` to the link on X, or use LinkedIn's Post Inspector.
 - `robots.txt` blocks crawling of this file, the template and the script. `.nojekyll` makes GitHub Pages serve files as committed. `404.html` handles any missing URL.
 
@@ -303,4 +318,4 @@ Each of these cost a correction. They are here so the reason behind a rule is no
 - Do not go back to perfect old posts. Ideas never run out, and polishing what is behind stops what is ahead. Carry the lesson into the next article.
 - A link that returns "200" can still fail for a reader: one government news page took up to 40 seconds to load. Time each link, and use the page's own main address, not an AMP or `index.html` copy.
 - The digital gold draft followed every fact rule and was still too hard to read. "Simple" was a line I ticked myself, the reviewers were asked about facts, and each fairness fix came in as legal wording. A rule with no test does not get followed, so the simple-language test now runs last.
-- Twice in two days a social post opened with a line I wrote ("Buy ₹10,000 of digital gold today", "Your bank will sell you a gold coin"), though the rule said to use the source's words. Knowing a rule is not enough; it needs a check at the moment of writing, so the first line is now copied from the source in quotation marks.
+- Social posts opened with lines I wrote ("Buy ₹10,000 of digital gold today", "Your bank will sell you a gold coin"), and later with a quote that had no number, though the rules said otherwise. The headline rules were spread over four places and two of them disagreed, so the check I ran was incomplete. They now live in one list in §4, the checks are shown ticked with every line offered, and this file is reviewed after every article and every set of social posts.

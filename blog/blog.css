@@ -221,7 +221,7 @@ figure.chart figcaption {
 /* Newspaper-style deck under the headline: the extension of the headline
    in italics, then a small reference line for the quoted source. */
 .hero .dek {
-    font-size: 21px;
+    font-size: 27px; /* half the headline (54px) */
     font-style: italic;
     color: var(--ink);
     max-width: 820px;
@@ -238,4 +238,14 @@ figure.chart figcaption {
 
 .hero .dek-source a {
     color: var(--link-blue);
+}
+
+/* On phones the headline drops to 32px (style.css), so the deck stays at half: 16px */
+@media (max-width: 768px) {
+    .hero .dek {
+        font-size: 16px;
+    }
+    .hero .dek-source {
+        font-size: 13px;
+    }
 }

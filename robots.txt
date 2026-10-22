@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /blog/*.md
-Disallow: /blog/generate-share-image.ps1
-Disallow: /blog/generate-post-image.ps1
 
 Sitemap: https://trendturtles.com/sitemap.xml
